@@ -1,105 +1,93 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>蜗牛人个导航 | 大大的小蜗牛</title>
-<meta name="description" content="简单安全的互联网入口">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+<link rel="shortcut icon" href="https://eallion.github.io/favicon.ico?v=1561630099966">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://eallion.github.io/favicon.ico?v=1561629816547">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://eallion.github.io/styles/main.css">
 
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://eallion.github.io">
-        <img src="https://eallion.github.io/images/avatar.png?v=1561629816547" class="site-logo">
-        <h1 class="site-title">大大的小蜗牛</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://eallion.github.io">
+  <img class="avatar" src="https://eallion.github.io/images/avatar.png?v=1561630099966" alt="">
+  </a>
+  <h1 class="site-title">
+    大大的小蜗牛
+  </h1>
+  <p class="site-description">
+    简单安全的互联网入口
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="/talk" class="menu">
+          嘀咕
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-    </div>
-    <div class="site-description">
-      简单安全的互联网入口
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://eallion.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
+    
   </div>
 </div>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">蜗牛人个导航</h2>
-            <div class="post-date">2019-06-27</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              蜗牛人个导航
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2019-06-27 ·
+              </time>
+              
+            </div>
             
             <div class="post-content">
               <p><strong>我 的</strong> <a href="https://eallion.com/">博客</a><a href="https://mail.eallion.com/">邮箱</a><a href="https://rss.eallion.com">订阅</a><a href="https://keybase.io/eallion">Keybase</a><a href="https://twitter.com/eallion">Twitter</a><a href="https://github.com/eallion">Github</a><a href="https://t.me/eallion">Telegram</a><a href="https://www.linkedin.com/in/eallion">LinkedIn</a><a href="https://www.facebook.com/eallion">Facebook</a><a href="https://www.instagram.com/eallion/">instagram</a><a href="https://steamcommunity.com/id/eallion">Steam</a><a href="https://www.pinterest.com/eallion/">Pinterest</a><a href="https://www.reddit.com/user/eallion/">reddit</a><a href="https://www.v2ex.com/member/eallion">v2ex</a><a href="https://eallion.slack.com/">Slack</a><a href="https://www.zhihu.com/people/woniu">知乎</a><a href="http://weibo.com/eallion">微博</a><a href="http://www.douban.com/people/eallion">豆瓣</a></p>
@@ -129,74 +117,58 @@
 <p><strong>云计算</strong> <a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=wuthb7tq&amp;productCode=vm&amp;utm_source=wuthb7tq">阿里云</a><a href="https://cloud.tencent.com/redirect.php?redirect=1005&amp;cps_key=1f05a4ef7955bfdbc954f3f0a115c2e3">腾讯云</a><a href="https://cloud.baidu.com/">百度云</a><a href="https://cloud.google.com/">Google</a><a href="https://aws.amazon.com">AWS</a><a href="https://azure.microsoft.com">Azure</a><a href="https://m.do.co/c/32b844ce481a">DigitalOcean</a><a href="https://www.linode.com">Linode</a><a href="http://www.vultr.com/?ref=6995088">Vultr</a><a href="https://bandwagonhost.com/aff.php?aff=39172">Bandwagon</a><a href="https://virmach.com/manage/aff.php?aff=836">VirMach</a><a href="https://clientarea.gigsgigscloud.com/?affid=795">GGC</a><a href="https://www.diyvm.com/page.aspx?c=referral&amp;u=62210">DiyVM</a><a href="https://hostxen.com/page.aspx?c=referral&amp;u=9166">HostXen</a><a href="https://status.eallion.com/">VPSstatus</a></p>
 
             </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://eallion.github.io/post/about">
-                  <h3 class="post-title">
-                    关于
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
+          </article>
         </div>
-      </div>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://eallion.github.io/post/about">
+              <h3 class="post-title">
+                关于
+              </h3>
+            </a>
+          </div>
+        
 
-<script type="application/javascript">
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-AOS.init();
+<div id="gitalk-container"></div>
 
-hljs.initHighlightingOnLoad()
+<script>
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  var gitalk = new Gitalk({
+    clientID: 'a3a549a37878e2bc5a95',
+    clientSecret: '5aaa94cc11cd3dd2069271480e0fe4a5a38b339f',
+    repo: 'eallion.github.io',
+    owner: 'eallion',
+    admin: ['eallion'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
 
+          
+        
 
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://eallion.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
-      var gitalk = new Gitalk({
-        clientID: 'a3a549a37878e2bc5a95',
-        clientSecret: '5aaa94cc11cd3dd2069271480e0fe4a5a38b339f',
-        repo: 'eallion.github.io',
-        owner: 'eallion',
-        admin: ['eallion'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
 
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
-
-
-
-
+      </div>
+    </div>
   </body>
 </html>
