@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eallion.github.io</id>
     <title>大大的小蜗牛</title>
-    <updated>2019-06-27T10:17:25.047Z</updated>
+    <updated>2019-06-27T10:18:37.135Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://eallion.github.io"/>
     <link rel="self" href="https://eallion.github.io/atom.xml"/>
@@ -11,49 +11,12 @@
     <icon>https://eallion.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 大大的小蜗牛</rights>
     <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://eallion.github.io/post/about</id>
-        <link href="https://eallion.github.io/post/about">
+        <title type="html"><![CDATA[测试]]></title>
+        <id>https://eallion.github.io/post/ce-shi</id>
+        <link href="https://eallion.github.io/post/ce-shi">
         </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="about-me">About me：</h3>
-<ul>
-<li>双子，B型血，断掌，属虎。</li>
-<li>已婚。</li>
-<li>不高不矮，不胖不瘦。</li>
-<li>先天性乐观。</li>
-<li>随意但不随便。</li>
-<li>小众而不小资。</li>
-<li>亦正亦邪。</li>
-<li>不是个好人但从来不做坏事。</li>
-<li>PS：佛系写博。</li>
-</ul>
-<h3 id="格言">格言：</h3>
-<ul>
-<li>机会总是垂青于有准备的人</li>
-<li><em>Chance favors the prepared mind</em></li>
-</ul>
-<h3 id="职业">职业：</h3>
-<ul>
-<li>
-<p>电子商务</p>
-<ul>
-<li>运营总监</li>
-<li>Full Stack Operator</li>
-</ul>
-</li>
-<li>
-<p>简历</p>
-<ul>
-<li><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/eallion">Linkedin</a></li>
-<li><i class="fa fa-vcard"></i> <a href="https://qin-chao.cn">Qinchao</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="联系方式">联系方式：</h3>
-<ul>
-<li>E-mail：<a href=" mailto:eallion@eallion.com">eallion@eallion.com</a></li>
-</ul>
+        <updated>2019-06-27T10:18:17.000Z</updated>
+        <content type="html"><![CDATA[<p>测试测试测试测试测试</p>
 ]]></content>
     </entry>
 </feed>
