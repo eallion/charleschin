@@ -4,7 +4,7 @@
 
 ## 源码
 
-[Cup](https://github.com/CoolQ/Cup)  https://github.com/CoolQ/Cup
+Cup: [https://github.com/CoolQ/Cup](https://github.com/CoolQ/Cup)  
 
 ## 演示
 
