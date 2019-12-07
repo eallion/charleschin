@@ -8,7 +8,7 @@ var __apiKeys = [
 	'm783531673-15c8868ee165e3c80807b7c0',  // Google HK
 	'm783953743-37e6e7168359948ba0151260',  // AWS HK
 	'm783953751-fec9f51f660997d5efe77857',  // Oracle Cloud
-	'm781450763-856d189f18a8095b76b8c9ae', 	// BWGhost DC6
+	'm781450763-856d189f18a8095b76b8c9ae',  // BWGhost DC6
 	'm783953731-f12e6f295ce9a2720a14d8e1',  // SyUmbrella Home Page
 ];
 
