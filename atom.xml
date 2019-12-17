@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.eallion.com</id>
     <title>eallion&apos;s note</title>
-    <updated>2019-12-17T15:13:45.729Z</updated>
+    <updated>2019-12-17T15:15:55.044Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.eallion.com"/>
     <link rel="self" href="https://blog.eallion.com/atom.xml"/>
@@ -15,6 +15,18 @@
         <link href="https://blog.eallion.com/post/git_push_multi_urls">
         </link>
         <updated>2019-12-17T15:02:51.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>以 Git Pages + Coding Pages 为例</p>
+</blockquote>
+<h3 id="准备工作">准备工作：</h3>
+<ul>
+<li>创建 Git Pages 仓库 <a href="https://eallion.github.io">eallion.github.io</a></li>
+<li>创建 Coding Pages 仓库 <a href="https://eallion.coding.me">eallion.coding.me</a></li>
+<li>申请 <a href="https://github.com/settings/tokens/new">Github token</a></li>
+<li>申请 Coding token <a href="https://dev.tencent.com/user/account/setting/tokens/new">访问令牌</a></li>
+<li>在 Gridea 里配置好 Git Pages</li>
+</ul>
+]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>以 Git Pages + Coding Pages 为例</p>
 </blockquote>
@@ -26,6 +38,7 @@
 <li>申请 Coding token <a href="https://dev.tencent.com/user/account/setting/tokens/new">访问令牌</a></li>
 <li>在 Gridea 里配置好 Git Pages</li>
 </ul>
+<!-- more -->
 <h3 id="配置-gitconfig">配置 <code>.git/config</code></h3>
 <pre><code>cd ~/Documents/Gridea/output
 git remote set-url --add --push origin https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git
