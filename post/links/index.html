@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea git push 同步到多个仓库 | eallion&#39;s note</title>
+<title>友情链接 | eallion&#39;s note</title>
 <meta name="description" content="" />
 <link rel="shortcut icon" href="https://blog.eallion.com/favicon.ico?v=1576600305116">
 <link href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css" rel="stylesheet">
@@ -94,99 +94,42 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Gridea git push 同步到多个仓库
+              友情链接
             </h2>
             <div class="post-info">
               <span>
-                2019-12-17
+                2019-12-18
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
               
-                <a href="https://blog.eallion.com/tag/16TKa8fnU" class="post-tag">
-                  # gridea
+                <a href="https://blog.eallion.com/tag/6uYD__Mh9" class="post-tag">
+                  # 友情链接
                 </a>
               
-                <a href="https://blog.eallion.com/tag/a7R0q0JR1d" class="post-tag">
-                  # github
+                <a href="https://blog.eallion.com/tag/XiD8AjcX54" class="post-tag">
+                  # 友链
                 </a>
               
-                <a href="https://blog.eallion.com/tag/mZ440JQXLg" class="post-tag">
-                  # git
-                </a>
-              
-                <a href="https://blog.eallion.com/tag/WTig6MK96e" class="post-tag">
-                  # coding
+                <a href="https://blog.eallion.com/tag/MhBl1oRL8N" class="post-tag">
+                  # links
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>以 Git Pages + Coding Pages 为例</p>
-</blockquote>
-<h3 id="准备工作">准备工作：</h3>
-<ul>
-<li>创建 Git Pages 仓库 <a href="https://eallion.github.io">eallion.github.io</a></li>
-<li>创建 Coding Pages 仓库 <a href="https://eallion.coding.me">eallion.coding.me</a></li>
-<li>申请 <a href="https://github.com/settings/tokens/new">Github token</a></li>
-<li>申请 Coding token <a href="https://dev.tencent.com/user/account/setting/tokens/new">访问令牌</a></li>
-<li>在 Gridea 里配置好 Git Pages</li>
-</ul>
-<h3 id="配置-gitconfig">配置 <code>.git/config</code></h3>
-<pre><code>cd ~/Documents/Gridea/output
-git remote set-url --add --push origin https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git
-git remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问令牌]@git.dev.tencent.com/[Coding 用户名]/[Coding 仓库].git
-</code></pre>
-<blockquote>
-<p>顺便说一下：<code>https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git</code>这行代码，<code>git push</code> 免密码。</p>
-</blockquote>
-<p>输入：<code>git remote -v</code>，如果有如下提示，即有 2 条 (push) 代码，则说明配置正确：</p>
-<figure data-type="image" tabindex="1"><img src="https://blog.eallion.com/post-images/1576594996184.png" alt="FlameShot_2019-12-17_224644"></figure>
-<h3 id="dns解析">DNS解析</h3>
-<p>解析 CNAME 的时候，国内的解析到 Coding Pages, 国外的解析到 Git Pages.</p>
-<p><img src="https://blog.eallion.com/post-images/1576595132692.png" alt="FlameShot_2019-12-17_225742"><br>
-如下图所示：<br>
-<img src="https://blog.eallion.com/post-images/1576595146845.png" alt="FlameShot_2019-12-17_225838"></p>
-<h3 id="同步">同步</h3>
-<p>配置好后，正常同步即可。</p>
-<h3 id="其他注意事项">其他注意事项</h3>
-<p>如果开启了 https, 但是 Let's Encrypt 只有3个月的有效时间，到时候关系到续期的问题，续期的时候需要暂时解析，如续期 Git Pages 的证书，就暂停 Coding Pages 的解析，反之一样。</p>
+                <p><a href="https://eallion.com">大大的小蜗牛</a></p>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作：</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE-gitconfig">配置 <code>.git/config</code></a></li>
-<li><a href="#dns%E8%A7%A3%E6%9E%90">DNS解析</a></li>
-<li><a href="#%E5%90%8C%E6%AD%A5">同步</a></li>
-<li><a href="#%E5%85%B6%E4%BB%96%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">其他注意事项</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
+                
               </div>
             </div>
           </article>
         </div>
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://blog.eallion.com/post/gridea-random-description">
-              <h3 class="post-title">
-                Gridea 随机网站描述
-              </h3>
-            </a>
-          </div>
         
 
         
