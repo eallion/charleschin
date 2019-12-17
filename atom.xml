@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.eallion.com</id>
     <title>eallion&apos;s note</title>
-    <updated>2019-12-17T16:34:37.545Z</updated>
+    <updated>2019-12-17T16:35:33.313Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.eallion.com"/>
     <link rel="self" href="https://blog.eallion.com/atom.xml"/>
@@ -15,9 +15,14 @@
         <link href="https://blog.eallion.com/post/git_push_multi_urls">
         </link>
         <updated>2019-12-17T15:02:51.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>以 Git Pages + Coding Pages 为例</p>
+</blockquote>
+]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>以 Git Pages + Coding Pages 为例</p>
 </blockquote>
+<!-- more -->
 <h3 id="准备工作">准备工作：</h3>
 <ul>
 <li>创建 Git Pages 仓库 <a href="https://eallion.github.io">eallion.github.io</a></li>
@@ -53,10 +58,16 @@ git remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问
         <link href="https://blog.eallion.com/post/gridea-random-description">
         </link>
         <updated>2019-12-16T16:51:45.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>DEMO: <a href="https://eallion.github.io">https://eallion.github.io</a></p>
+</blockquote>
+<p>我的 Gridea 生成的 Git Pages 静态博客，随机站点描述引用的是“<a href="https://www.jinrishici.com/">今日诗词</a>”的 API 。</p>
+]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>DEMO: <a href="https://eallion.github.io">https://eallion.github.io</a></p>
 </blockquote>
 <p>我的 Gridea 生成的 Git Pages 静态博客，随机站点描述引用的是“<a href="https://www.jinrishici.com/">今日诗词</a>”的 API 。</p>
+<!-- more -->
 <h3 id="step-1">Step 1:</h3>
 <p>找到对应的 theme 文件目录，如 <code>Notes</code>：<br>
 进入<code>Gridea/themes/notes/templates/includes</code>，用编辑器打开<code>footer.ejs</code>，在合适的位置添加：</p>
@@ -84,8 +95,12 @@ git remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问
         <link href="https://blog.eallion.com/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
 <p><a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>
 <a href="http://fehey.com/">示例网站</a></p>
