@@ -2,13 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.eallion.com</id>
     <title>eallion&apos;s note</title>
-    <updated>2019-12-17T09:28:13.553Z</updated>
+    <updated>2019-12-17T15:10:55.738Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.eallion.com"/>
     <link rel="self" href="https://blog.eallion.com/atom.xml"/>
     <logo>https://blog.eallion.com/images/avatar.png</logo>
     <icon>https://blog.eallion.com/favicon.ico</icon>
     <rights>All rights reserved 2019, eallion&apos;s note</rights>
+    <entry>
+        <title type="html"><![CDATA[Gridea git push 同步到多个仓库]]></title>
+        <id>https://blog.eallion.com/post/git_push_multi_urls</id>
+        <link href="https://blog.eallion.com/post/git_push_multi_urls">
+        </link>
+        <updated>2019-12-17T15:02:51.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>以 Git Pages + Coding Pages 为例</p>
+</blockquote>
+<h3 id="准备工作">准备工作：</h3>
+<ul>
+<li>创建 Git Pages 仓库 <a href="https://eallion.github.io">eallion.github.io</a></li>
+<li>创建 Coding Pages 仓库 <a href="https://eallion.coding.me">eallion.coding.me</a></li>
+<li>申请 <a href="https://github.com/settings/tokens/new">Github token</a></li>
+<li>申请 Coding token <a href="https://dev.tencent.com/user/account/setting/tokens/new">访问令牌</a></li>
+<li>在 Gridea 里配置好 Git Pages</li>
+</ul>
+<h3 id="配置-gitconfig">配置 <code>.git/config</code></h3>
+<pre><code>cd ~/Documents/Gridea/output
+git remote set-url --add --push origin https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git
+git remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问令牌]@git.dev.tencent.com/[Coding 用户名]/[Coding 仓库].git
+</code></pre>
+<blockquote>
+<p>顺便说一下：<code>https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git</code>这行代码，<code>git push</code> 免密码。</p>
+</blockquote>
+<p>输入：<code>git remote -v</code>，如果有如下提示，即有 2 条 (push) 代码，则说明配置正确：</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.eallion.com/post-images/1576594996184.png" alt="FlameShot_2019-12-17_224644"></figure>
+<h3 id="dns解析">DNS解析</h3>
+<p>解析 CNAME 的时候，国内的解析到 Coding Pages, 国外的解析到 Git Pages.</p>
+<p><img src="https://blog.eallion.com/post-images/1576595132692.png" alt="FlameShot_2019-12-17_225742"><br>
+如下图所示：<br>
+<img src="https://blog.eallion.com/post-images/1576595146845.png" alt="FlameShot_2019-12-17_225838"></p>
+<h3 id="同步">同步</h3>
+<p>配置好后，正常同步即可。</p>
+<h3 id="其他注意事项">其他注意事项</h3>
+<p>如果开启了 https, 但是 Let's Encrypt 只有3个月的有效时间，到时候关系到续期的问题，续期的时候需要暂时解析，如续期 Git Pages 的证书，就暂停 Coding Pages 的解析，反之一样。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea 随机网站描述]]></title>
         <id>https://blog.eallion.com/post/gridea-random-description</id>
