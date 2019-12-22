@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.eallion.com</id>
     <title>eallion&apos;s note</title>
-    <updated>2019-12-17T17:36:42.913Z</updated>
+    <updated>2019-12-22T12:47:38.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.eallion.com"/>
     <link rel="self" href="https://blog.eallion.com/atom.xml"/>
@@ -422,7 +422,7 @@ git remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问
 <h3 id="同步">同步</h3>
 <p>配置好后，正常同步即可。</p>
 <h3 id="其他注意事项">其他注意事项</h3>
-<p>如果开启了 https, 但是 Let's Encrypt 只有3个月的有效时间，到时候关系到续期的问题，续期的时候需要暂时解析，如续期 Git Pages 的证书，就暂停 Coding Pages 的解析，反之一样。</p>
+<p>如果开启了 https, 但是 Let's Encrypt 只有3个月的有效时间，实际上 Coding Pages 是80天自动续期，Git Pages 是60天自动续期。到时候关系到续期的问题，续期的时候需要暂时解析，如续期 Git Pages 的证书，就暂停 Coding Pages 的解析，反之一样。</p>
 ]]></content>
     </entry>
     <entry>
