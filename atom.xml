@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>大大的小蜗牛</title>
+  
+  <subtitle>eallion</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://eallion.com/"/>
+  <updated>2019-12-11T03:40:15.000Z</updated>
+  <id>https://eallion.com/</id>
+  
+  <author>
+    <name>eallion</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu 19.10 优化</title>
+    <link href="https://eallion.com/ubuntu1910/"/>
+    <id>https://eallion.com/ubuntu1910/</id>
+    <published>2019-11-29T04:36:00.000Z</published>
+    <updated>2019-12-11T03:40:15.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://static.eallion.com/usr/uploads/2019/11/2252212556.png!typecho.webp&quot; data-fancybox=&quot;group&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="https://eallion.com/categories/code/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://eallion.com/tags/Ubuntu/"/>
+    
+      <category term="优化" scheme="https://eallion.com/tags/%E4%BC%98%E5%8C%96/"/>
+    
+      <category term="美化" scheme="https://eallion.com/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="ZFS" scheme="https://eallion.com/tags/ZFS/"/>
+    
+      <category term="gnome" scheme="https://eallion.com/tags/gnome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typecho 中英文之间自动加上空格</title>
+    <link href="https://eallion.com/autospace/"/>
+    <id>https://eallion.com/autospace/</id>
+    <published>2019-11-29T01:29:00.000Z</published>
+    <updated>2019-12-02T05:53:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;以前写博客，不太注意排版细节，而且那个时候也还没有Markdown。&lt;br&gt;最近无意中点开几篇老文章看起来比较混乱。&lt;br&gt;所以决定统一调整一下格式，其中有一项就是把中英文之间自动加上空格。&lt;br&gt;本文主要讲怎么把中英文之间
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="https://eallion.com/categories/code/"/>
+    
+    
+      <category term="空格" scheme="https://eallion.com/tags/%E7%A9%BA%E6%A0%BC/"/>
+    
+      <category term="space" scheme="https://eallion.com/tags/space/"/>
+    
+      <category term="pangu" scheme="https://eallion.com/tags/pangu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 配置 Guake  Oh-My-Zsh 和 EverVim</title>
+    <link href="https://eallion.com/ubuntuzsh/"/>
+    <id>https://eallion.com/ubuntuzsh/</id>
+    <published>2019-11-26T17:08:00.000Z</published>
+    <updated>2019-11-29T18:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;终端推荐安装 Guake ，又好看又方便：&lt;/p&gt;
+&lt;h3 id=&quot;安装-Guake-：&quot;&gt;&lt;a href=&quot;#安装-Guake-：&quot; class=&quot;headerlink&quot; title=&quot;安装 Guake
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="https://eallion.com/categories/code/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://eallion.com/tags/Ubuntu/"/>
+    
+      <category term="guake" scheme="https://eallion.com/tags/guake/"/>
+    
+      <category term="onmyzsh" scheme="https://eallion.com/tags/onmyzsh/"/>
+    
+      <category term="evervin" scheme="https://eallion.com/tags/evervin/"/>
+    
+      <category term="pcm" scheme="https://eallion.com/tags/pcm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云镜像改版</title>
+    <link href="https://eallion.com/alimirrors/"/>
+    <id>https://eallion.com/alimirrors/</id>
+    <published>2019-11-26T07:03:00.000Z</published>
+    <updated>2019-11-27T11:47:15.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;昨天晚上打算去看下阿里云镜像有没有 manjaro 的源，发现阿里云镜像又双叒改版了。从 mirrors 改成 OPSX 改成现在的 developer
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
+    
+    
+      <category term="阿里云" scheme="https://eallion.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+      <category term="mirrors" scheme="https://eallion.com/tags/mirrors/"/>
+    
+      <category term="opsx" scheme="https://eallion.com/tags/opsx/"/>
+    
+      <category term="镜像" scheme="https://eallion.com/tags/%E9%95%9C%E5%83%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>备份工具 Duplicati</title>
+    <link href="https://eallion.com/duplicati/"/>
+    <id>https://eallion.com/duplicati/</id>
+    <published>2019-11-25T14:30:00.000Z</published>
+    <updated>2019-11-25T14:34:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt; &lt;a href=&quot;https://www.duplicati.com/download&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Duplicati&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="https://eallion.com/categories/code/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://eallion.com/tags/Ubuntu/"/>
+    
+      <category term="备份" scheme="https://eallion.com/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="Duplicati" scheme="https://eallion.com/tags/Duplicati/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu Server snap 安装 Nextcloud</title>
+    <link href="https://eallion.com/nextcloud/"/>
+    <id>https://eallion.com/nextcloud/</id>
+    <published>2019-11-25T08:08:00.000Z</published>
+    <updated>2019-11-25T14:36:31.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Nextcloud 官网提供了很多种安装方式，我选择通过 snap 安装。&lt;br&gt;其实 Ubuntu server 已经内置了 Nextcloud
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="https://eallion.com/categories/code/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://eallion.com/tags/Ubuntu/"/>
+    
+      <category term="网盘" scheme="https://eallion.com/tags/%E7%BD%91%E7%9B%98/"/>
+    
+      <category term="server" scheme="https://eallion.com/tags/server/"/>
+    
+      <category term="nexecloud" scheme="https://eallion.com/tags/nexecloud/"/>
+    
+      <category term="snap" scheme="https://eallion.com/tags/snap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu Server 安装 Mosh</title>
+    <link href="https://eallion.com/mosh/"/>
+    <id>https://eallion.com/mosh/</id>
+    <published>2019-11-24T08:12:00.000Z</published>
+    <updated>2019-11-25T14:31:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;服务端安装Mosh：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt install mosh&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;客户端安装Mosh：&lt;/p&gt;
+&lt;p&gt;Ubuntu：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="https://eallion.com/categories/code/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://eallion.com/tags/Ubuntu/"/>
+    
+      <category term="vps" scheme="https://eallion.com/tags/vps/"/>
+    
+      <category term="ssh" scheme="https://eallion.com/tags/ssh/"/>
+    
+      <category term="server" scheme="https://eallion.com/tags/server/"/>
+    
+      <category term="mosh" scheme="https://eallion.com/tags/mosh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>breaking bad</title>
+    <link href="https://eallion.com/breakingbad/"/>
+    <id>https://eallion.com/breakingbad/</id>
+    <published>2019-11-21T08:21:00.000Z</published>
+    <updated>2019-11-21T08:23:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;看过《绝命毒师》和《绝命律师》这两部神剧之后，别说是国产垃圾电视剧，就连高分美剧也没多少兴趣去看了。&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="绝命毒师" scheme="https://eallion.com/tags/%E7%BB%9D%E5%91%BD%E6%AF%92%E5%B8%88/"/>
+    
+      <category term="绝命律师" scheme="https://eallion.com/tags/%E7%BB%9D%E5%91%BD%E5%BE%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算命</title>
+    <link href="https://eallion.com/fortune-telling/"/>
+    <id>https://eallion.com/fortune-telling/</id>
+    <published>2019-11-05T06:45:00.000Z</published>
+    <updated>2019-11-05T06:45:30.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;国庆回老家的时候，&lt;br&gt;去老街算了一次命。&lt;/p&gt;
+&lt;p&gt;那位算命先生是一位退休干部的样子。&lt;br&gt;听别人说他算得挺准的。&lt;/p&gt;
+&lt;p&gt;算命先生说我的八字比较大。&lt;br&gt;说了今年、明年、后年的运势。&lt;/p&gt;
+&lt;p&gt;最后还
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
+    
+    
+      <category term="算命" scheme="https://eallion.com/tags/%E7%AE%97%E5%91%BD/"/>
+    
+      <category term="八字" scheme="https://eallion.com/tags/%E5%85%AB%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WeGame LOL 20投一键喊话</title>
+    <link href="https://eallion.com/wegame-lol-20/"/>
+    <id>https://eallion.com/wegame-lol-20/</id>
+    <published>2019-10-18T05:21:00.000Z</published>
+    <updated>2019-10-18T05:23:41.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;1， 很明显我们为了胜利所做的一切努力都已经被宣告为徒劳&lt;br&gt;2， 继续这种难看的抵抗毫无意义&lt;br&gt;3， 大家都已经很努力了 我们也足够优秀了&lt;br&gt;4， 不是我们的错 我们没有人要为这场失败负责&lt;br&gt;5，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="LOL" scheme="https://eallion.com/tags/LOL/"/>
+    
+      <category term="英雄联盟" scheme="https://eallion.com/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/"/>
+    
+      <category term="wegame" scheme="https://eallion.com/tags/wegame/"/>
+    
+      <category term="20投" scheme="https://eallion.com/tags/20%E6%8A%95/"/>
+    
+      <category term="一键喊话" scheme="https://eallion.com/tags/%E4%B8%80%E9%94%AE%E5%96%8A%E8%AF%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Made by Google ‘19</title>
+    <link href="https://eallion.com/6183/"/>
+    <id>https://eallion.com/6183/</id>
+    <published>2019-10-12T18:45:00.000Z</published>
+    <updated>2019-10-12T18:47:53.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Waiting for &lt;a href=&quot;https://twitter.com/madebygoogle&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="google" scheme="https://eallion.com/tags/google/"/>
+    
+      <category term="pixel" scheme="https://eallion.com/tags/pixel/"/>
+    
+      <category term="madebygoogle" scheme="https://eallion.com/tags/madebygoogle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>言论自由</title>
+    <link href="https://eallion.com/free-speech/"/>
+    <id>https://eallion.com/free-speech/</id>
+    <published>2019-10-12T06:38:00.000Z</published>
+    <updated>2019-10-24T09:24:19.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3 id=&quot;什么是“言论自由”？&quot;&gt;&lt;a href=&quot;#什么是“言论自由”？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
+    
+    
+      <category term="言论自由" scheme="https://eallion.com/tags/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>10年間を振り返る</title>
+    <link href="https://eallion.com/ten-years/"/>
+    <id>https://eallion.com/ten-years/</id>
+    <published>2019-09-28T05:06:00.000Z</published>
+    <updated>2019-09-28T16:07:35.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h4 id=&quot;10年間を振り返る&quot;&gt;&lt;a href=&quot;#10年間を振り返る&quot; class=&quot;headerlink&quot; title=&quot;#10年間を振り返る&quot;&gt;&lt;/a&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
+    
+    
+      <category term="10年間を振り返る" scheme="https://eallion.com/tags/10%E5%B9%B4%E9%96%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"/>
+    
+      <category term="十年回顾" scheme="https://eallion.com/tags/%E5%8D%81%E5%B9%B4%E5%9B%9E%E9%A1%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>回老家一趟</title>
+    <link href="https://eallion.com/go-back-home/"/>
+    <id>https://eallion.com/go-back-home/</id>
+    <published>2019-07-13T21:54:44.000Z</published>
+    <updated>2019-07-13T21:54:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;回老家一趟。&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>亲戚</title>
+    <link href="https://eallion.com/relative/"/>
+    <id>https://eallion.com/relative/</id>
+    <published>2019-07-02T04:40:40.000Z</published>
+    <updated>2019-07-02T04:40:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;小时候，我们常常把亲戚两个字看得多么美好和重要。一旦长大成人，开始独立生活，我们便很快知道，亲戚关系常常是庸俗的；互相设法沾光，沾不上光就翻白眼；甚至你生活中最大的困难也常常是亲戚们造成的；生活同样会告诉你，亲戚往往不如朋友
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="亲戚-平凡的世界" scheme="https://eallion.com/tags/%E4%BA%B2%E6%88%9A-%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中年</title>
+    <link href="https://eallion.com/middle-age/"/>
+    <id>https://eallion.com/middle-age/</id>
+    <published>2019-06-30T04:12:37.000Z</published>
+    <updated>2019-06-30T04:12:37.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;人到中年，面对女性 有一种会变得冯唐说的那种“很脏” 似乎只有这样才能体现出自己还年轻还有活力还有魅力。另一种则是云淡风轻，觉得容颜只是皮囊
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>利川高空VR全景图</title>
+    <link href="https://eallion.com/vr-of-lichuan/"/>
+    <id>https://eallion.com/vr-of-lichuan/</id>
+    <published>2019-06-29T18:08:36.000Z</published>
+    <updated>2019-06-29T18:08:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;利川高空VR全景图&lt;br&gt;&lt;a href=&quot;https://720yun.com/t/f4fjvOmktu3?scene_id=20687628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="利川高空VR全景图" scheme="https://eallion.com/tags/%E5%88%A9%E5%B7%9D%E9%AB%98%E7%A9%BAVR%E5%85%A8%E6%99%AF%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>灵魂问答</title>
+    <link href="https://eallion.com/questions-of-the-soul/"/>
+    <id>https://eallion.com/questions-of-the-soul/</id>
+    <published>2019-06-29T14:38:00.000Z</published>
+    <updated>2019-06-29T14:41:19.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;配钥匙师傅：你配吗？&lt;br&gt;算命先生：你算什么东西？&lt;br&gt;食堂阿姨：你要饭吗？&lt;br&gt;快递小哥：你是什么东西？&lt;br&gt;上海垃圾分拣阿姨：你是什么垃圾？&lt;br&gt;滴滴司机：你搞清楚自己的定位没有？&lt;br&gt;门卫大爷：你从哪里来，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="灵魂问答" scheme="https://eallion.com/tags/%E7%81%B5%E9%AD%82%E9%97%AE%E7%AD%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无意义的个性化</title>
+    <link href="https://eallion.com/meaningless-individualization/"/>
+    <id>https://eallion.com/meaningless-individualization/</id>
+    <published>2019-06-29T04:20:42.000Z</published>
+    <updated>2019-06-29T04:20:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;个人网站本身就是表达个性的地方&lt;br&gt;除了 wordpress、typecho、git pages
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
+    
+    
+      <category term="个性化" scheme="https://eallion.com/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    
+      <category term="背景音乐" scheme="https://eallion.com/tags/%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/"/>
+    
+      <category term="负优化" scheme="https://eallion.com/tags/%E8%B4%9F%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>情绪价值</title>
+    <link href="https://eallion.com/emotional-value/"/>
+    <id>https://eallion.com/emotional-value/</id>
+    <published>2019-06-28T11:59:00.000Z</published>
+    <updated>2019-06-28T12:00:02.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;作为一个屌丝，我非常懂屌丝。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="情绪价值" scheme="https://eallion.com/tags/%E6%83%85%E7%BB%AA%E4%BB%B7%E5%80%BC/"/>
+    
+  </entry>
+  
+</feed>
