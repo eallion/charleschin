@@ -231,9 +231,7 @@
         
         
           &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;服务端安装Mosh：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt install mosh&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;客户端安装Mosh：&lt;/p&gt;
-&lt;p&gt;Ubuntu：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo
+&lt;pre&gt;&lt;code class=&quot;highlight plain&quot;&gt;sudo apt install
         
       
     
