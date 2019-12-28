@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>Gridea git push 同步到多个仓库</title>
-      <link href="/deploy-gridea-to-github-and-coding/"/>
-      <url>/deploy-gridea-to-github-and-coding/</url>
-      
-        <content type="html"><![CDATA[<html><head></head><body><blockquote><p>以 Git Pages + Coding Pages 为例</p></blockquote><h3 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h3><ul><li>创建 Git Pages 仓库 <a href="https://eallion.github.io" target="_blank" rel="noopener">eallion.github.io</a></li><li>创建 Coding Pages 仓库 <a href="https://eallion.coding.me" target="_blank" rel="noopener">eallion.coding.me</a></li><li>申请 <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">Github token</a></li><li>申请 Coding token <a href="https://dev.tencent.com/user/account/setting/tokens/new" target="_blank" rel="noopener">访问令牌</a></li><li>在 Gridea 里配置好 Git Pages</li></ul><h3 id="配置-git-config"><a href="#配置-git-config" class="headerlink" title="配置 .git/config"></a>配置 <code>.git/config</code></h3><pre><code class="highlight plain">cd ~/Documents/Gridea/outputgit remote set-url --add --push origin https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].gitgit remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问令牌]@git.dev.tencent.com/[Coding 用户名]/[Coding 仓库].git</code></pre><blockquote><p> 顺便说一下：<code>https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git</code>这行代码，<code>git push</code> 免密码。</p></blockquote><p>输入：<code>git remote -v</code>，如果有如下提示，即有 2 条 (push) 代码，则说明配置正确：</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231145.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231145.png" class="lazyload"></a></p><h3 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h3><p>解析 CNAME 的时候，国内的解析到 Coding Pages, 国外的解析到 Git Pages.</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231204.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231204.png" class="lazyload"></a></p><p>如下图所示：</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231217.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231217.png" class="lazyload"></a></p><h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p>配置好后，正常同步即可。</p><h3 id="其他注意事项"><a href="#其他注意事项" class="headerlink" title="其他注意事项"></a>其他注意事项</h3><p>如果开启了 https, 但是 Let’s Encrypt 只有3个月的有效时间，到时候关系到续期的问题，续期的时候需要暂时解析，如续期 Git Pages 的证书，就暂停 Coding Pages 的解析，反之一样。</p></body></html>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日志 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Github Actions 自动部署 Hexo 脚本</title>
       <link href="/github-actions-hexo-ci/"/>
       <url>/github-actions-hexo-ci/</url>
@@ -52,6 +27,31 @@
             <tag> actions </tag>
             
             <tag> deploy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Gridea git push 同步到多个仓库</title>
+      <link href="/deploy-gridea-to-github-and-coding/"/>
+      <url>/deploy-gridea-to-github-and-coding/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><blockquote><p>以 Git Pages + Coding Pages 为例</p></blockquote><h3 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h3><ul><li>创建 Git Pages 仓库 <a href="https://eallion.github.io" target="_blank" rel="noopener">eallion.github.io</a></li><li>创建 Coding Pages 仓库 <a href="https://eallion.coding.me" target="_blank" rel="noopener">eallion.coding.me</a></li><li>申请 <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">Github token</a></li><li>申请 Coding token <a href="https://dev.tencent.com/user/account/setting/tokens/new" target="_blank" rel="noopener">访问令牌</a></li><li>在 Gridea 里配置好 Git Pages</li></ul><h3 id="配置-git-config"><a href="#配置-git-config" class="headerlink" title="配置 .git/config"></a>配置 <code>.git/config</code></h3><pre><code class="highlight plain">cd ~/Documents/Gridea/outputgit remote set-url --add --push origin https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].gitgit remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问令牌]@git.dev.tencent.com/[Coding 用户名]/[Coding 仓库].git</code></pre><blockquote><p> 顺便说一下：<code>https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git</code>这行代码，<code>git push</code> 免密码。</p></blockquote><p>输入：<code>git remote -v</code>，如果有如下提示，即有 2 条 (push) 代码，则说明配置正确：</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231145.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231145.png" class="lazyload"></a></p><h3 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h3><p>解析 CNAME 的时候，国内的解析到 Coding Pages, 国外的解析到 Git Pages.</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231204.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231204.png" class="lazyload"></a></p><p>如下图所示：</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231217.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231217.png" class="lazyload"></a></p><h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p>配置好后，正常同步即可。</p><h3 id="其他注意事项"><a href="#其他注意事项" class="headerlink" title="其他注意事项"></a>其他注意事项</h3><p>如果开启了 https, 但是 Let’s Encrypt 只有3个月的有效时间，到时候关系到续期的问题，续期的时候需要暂时解析，如续期 Git Pages 的证书，就暂停 Coding Pages 的解析，反之一样。</p></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -2739,11 +2739,11 @@
       
         <tags>
             
+            <tag> 神话 </tag>
+            
             <tag> 盘古 </tag>
             
             <tag> 开天 </tag>
-            
-            <tag> 神话 </tag>
             
             <tag> 三五历 </tag>
             

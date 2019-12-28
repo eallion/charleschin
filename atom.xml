@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eallion.com/"/>
-  <updated>2019-12-28T16:01:35.548Z</updated>
+  <updated>2019-12-28T16:18:32.795Z</updated>
   <id>https://eallion.com/</id>
   
   <author>
@@ -17,41 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Gridea git push 同步到多个仓库</title>
-    <link href="https://eallion.com/deploy-gridea-to-github-and-coding/"/>
-    <id>https://eallion.com/deploy-gridea-to-github-and-coding/</id>
-    <published>2019-12-28T14:58:39.000Z</published>
-    <updated>2019-12-28T16:01:35.548Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
-&lt;p&gt;以 Git Pages + Coding Pages 为例&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;准备工作：&quot;&gt;&lt;a href=&quot;#准备工作：&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
-    
-    
-      <category term="hexo" scheme="https://eallion.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Github Actions 自动部署 Hexo 脚本</title>
     <link href="https://eallion.com/github-actions-hexo-ci/"/>
     <id>https://eallion.com/github-actions-hexo-ci/</id>
     <published>2019-12-28T14:53:43.000Z</published>
-    <updated>2019-12-28T16:01:35.548Z</updated>
+    <updated>2019-12-28T16:18:32.795Z</updated>
     
     <summary type="html">
     
@@ -76,6 +46,36 @@
       <category term="actions" scheme="https://eallion.com/tags/actions/"/>
     
       <category term="deploy" scheme="https://eallion.com/tags/deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gridea git push 同步到多个仓库</title>
+    <link href="https://eallion.com/deploy-gridea-to-github-and-coding/"/>
+    <id>https://eallion.com/deploy-gridea-to-github-and-coding/</id>
+    <published>2019-12-16T14:58:39.000Z</published>
+    <updated>2019-12-28T16:18:32.795Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
+&lt;p&gt;以 Git Pages + Coding Pages 为例&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;准备工作：&quot;&gt;&lt;a href=&quot;#准备工作：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
+    
+    
+      <category term="hexo" scheme="https://eallion.com/tags/hexo/"/>
     
   </entry>
   
