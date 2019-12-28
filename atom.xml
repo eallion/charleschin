@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eallion.com/"/>
-  <updated>2019-12-11T03:40:15.000Z</updated>
+  <updated>2019-12-28T16:01:35.548Z</updated>
   <id>https://eallion.com/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gridea git push 同步到多个仓库</title>
+    <link href="https://eallion.com/deploy-gridea-to-github-and-coding/"/>
+    <id>https://eallion.com/deploy-gridea-to-github-and-coding/</id>
+    <published>2019-12-28T14:58:39.000Z</published>
+    <updated>2019-12-28T16:01:35.548Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
+&lt;p&gt;以 Git Pages + Coding Pages 为例&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;准备工作：&quot;&gt;&lt;a href=&quot;#准备工作：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
+    
+    
+      <category term="hexo" scheme="https://eallion.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github Actions 自动部署 Hexo 脚本</title>
+    <link href="https://eallion.com/github-actions-hexo-ci/"/>
+    <id>https://eallion.com/github-actions-hexo-ci/</id>
+    <published>2019-12-28T14:53:43.000Z</published>
+    <updated>2019-12-28T16:01:35.548Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;网上虽然有很多通过 Github Actions 自动部署 Hexo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="https://eallion.com/categories/code/"/>
+    
+    
+      <category term="hexo" scheme="https://eallion.com/tags/hexo/"/>
+    
+      <category term="github" scheme="https://eallion.com/tags/github/"/>
+    
+      <category term="actions" scheme="https://eallion.com/tags/actions/"/>
+    
+      <category term="deploy" scheme="https://eallion.com/tags/deploy/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu 19.10 优化</title>
@@ -566,64 +629,6 @@
     
     
       <category term="灵魂问答" scheme="https://eallion.com/tags/%E7%81%B5%E9%AD%82%E9%97%AE%E7%AD%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>无意义的个性化</title>
-    <link href="https://eallion.com/meaningless-individualization/"/>
-    <id>https://eallion.com/meaningless-individualization/</id>
-    <published>2019-06-29T04:20:42.000Z</published>
-    <updated>2019-06-29T04:20:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;个人网站本身就是表达个性的地方&lt;br&gt;除了 wordpress、typecho、git pages
-        
-      
-    
-    </summary>
-    
-    
-      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
-    
-    
-      <category term="个性化" scheme="https://eallion.com/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
-    
-      <category term="背景音乐" scheme="https://eallion.com/tags/%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/"/>
-    
-      <category term="负优化" scheme="https://eallion.com/tags/%E8%B4%9F%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>情绪价值</title>
-    <link href="https://eallion.com/emotional-value/"/>
-    <id>https://eallion.com/emotional-value/</id>
-    <published>2019-06-28T11:59:00.000Z</published>
-    <updated>2019-06-28T12:00:02.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;作为一个屌丝，我非常懂屌丝。
-        
-      
-    
-    </summary>
-    
-    
-      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
-    
-    
-      <category term="情绪价值" scheme="https://eallion.com/tags/%E6%83%85%E7%BB%AA%E4%BB%B7%E5%80%BC/"/>
     
   </entry>
   

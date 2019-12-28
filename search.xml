@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>Gridea git push 同步到多个仓库</title>
+      <link href="/deploy-gridea-to-github-and-coding/"/>
+      <url>/deploy-gridea-to-github-and-coding/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><blockquote><p>以 Git Pages + Coding Pages 为例</p></blockquote><h3 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h3><ul><li>创建 Git Pages 仓库 <a href="https://eallion.github.io" target="_blank" rel="noopener">eallion.github.io</a></li><li>创建 Coding Pages 仓库 <a href="https://eallion.coding.me" target="_blank" rel="noopener">eallion.coding.me</a></li><li>申请 <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">Github token</a></li><li>申请 Coding token <a href="https://dev.tencent.com/user/account/setting/tokens/new" target="_blank" rel="noopener">访问令牌</a></li><li>在 Gridea 里配置好 Git Pages</li></ul><h3 id="配置-git-config"><a href="#配置-git-config" class="headerlink" title="配置 .git/config"></a>配置 <code>.git/config</code></h3><pre><code class="highlight plain">cd ~/Documents/Gridea/outputgit remote set-url --add --push origin https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].gitgit remote set-url --add --push origin https://[Coding 用户名]:[Coding 访问令牌]@git.dev.tencent.com/[Coding 用户名]/[Coding 仓库].git</code></pre><blockquote><p> 顺便说一下：<code>https://[Github 用户名]:[Github_token]@github.com/[Github 用户名]/[Github 仓库].git</code>这行代码，<code>git push</code> 免密码。</p></blockquote><p>输入：<code>git remote -v</code>，如果有如下提示，即有 2 条 (push) 代码，则说明配置正确：</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231145.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231145.png" class="lazyload"></a></p><h3 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h3><p>解析 CNAME 的时候，国内的解析到 Coding Pages, 国外的解析到 Git Pages.</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231204.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231204.png" class="lazyload"></a></p><p>如下图所示：</p><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231217.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228231217.png" class="lazyload"></a></p><h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p>配置好后，正常同步即可。</p><h3 id="其他注意事项"><a href="#其他注意事项" class="headerlink" title="其他注意事项"></a>其他注意事项</h3><p>如果开启了 https, 但是 Let’s Encrypt 只有3个月的有效时间，到时候关系到续期的问题，续期的时候需要暂时解析，如续期 Git Pages 的证书，就暂停 Coding Pages 的解析，反之一样。</p></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Github Actions 自动部署 Hexo 脚本</title>
+      <link href="/github-actions-hexo-ci/"/>
+      <url>/github-actions-hexo-ci/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>网上虽然有很多通过 Github Actions 自动部署 Hexo 的教程，但都有各种各样的问题。<br>主要问题还是 Workflow 脚本没有写正确，比如插件部分。<br>其他过程省略，这里只贴部署脚本：</p><ul><li>请确保添加的 <code>Secrets</code> 名字为 <code>ACTION_DEPLOY_KEY</code></li><li>这3个地方要改为自己的信息：<pre><code class="highlight plain">git config --global user.name "eallion"git config --global user.email "eallion@eallion.com"git clone https://github.com/eallion/eallion.github.io .deploy_git</code></pre></li><li>插件部分可按自己实际用的插件删改</li><li>如果没有用到<code>hexo douban</code>插件，<code>hexo g && hexo douban && hexo deploy</code>可改为<code>hexo g -d</code></li></ul><p>另外一个建议是，所使用的<code>theme</code>中的<code>主题目录</code>用<code>git subtree</code>添加为子项目去维护。这样在多环境多终端发布文章时，不会<code>clone</code>或<code>pull</code>一个空<code>theme</code>。</p><h3 id="脚本配置："><a href="#脚本配置：" class="headerlink" title="脚本配置："></a>脚本配置：</h3><p>注意修改其中提到的几个地方</p><pre><code class="highlight bash">name: 自动部署 Hexoon: [push]<span class="built_in">jobs</span>:  build:    runs-on: ubuntu-latest    strategy:      matrix:        node-version: [10.x]    steps:      - name: 开始运行        uses: actions/checkout@v1      - name: 设置 Node.js <span class="variable">${{ matrix.node-version }</span>}        uses: actions/setup-node@v1        with:          node-version: <span class="variable">${{ matrix.node-version }</span>}      - name: 配置 Git 环境        env:          ACTION_DEPLOY_KEY: <span class="variable">${{secrets.ACTION_DEPLOY_KEY}</span>}        run: |          mkdir -p ~/.ssh/          <span class="built_in">echo</span> <span class="string">"<span class="variable">$ACTION_DEPLOY_KEY</span>"</span> > ~/.ssh/id_rsa          chmod 600 ~/.ssh/id_rsa          ssh-keyscan github.com >> ~/.ssh/known_hosts          git config --global user.name <span class="string">"eallion"</span>          git config --global user.email <span class="string">"eallion@eallion.com"</span>      - name: 安装 Hexo CI        run: |          <span class="built_in">export</span> TZ=<span class="string">'Asia/Shanghai'</span>          npm i -g hexo-cli          npm i      - name: 安装插件        run: |          npm install hexo-renderer-pug --save          npm install hexo-renderer-stylus --save          npm install hexo-deployer-git --save          npm install hexo-generator-search --save          npm install hexo-douban --save          npm install hexo-generator-feed --save          npm install hexo-abbrlink --save          npm install hexo-wordcount --save      - name: 部署博客        run: |          rm -rf .deploy_git          git <span class="built_in">clone</span> https://github.com/eallion/eallion.github.io .deploy_git          hexo g && hexo douban && hexo deploy          rm ~/.ssh/id_rsa</code></pre><h3 id="部署截图"><a href="#部署截图" class="headerlink" title="部署截图"></a>部署截图</h3><p><a href="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228232334.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/picgo/20191228232334.png" class="lazyload"></a></p></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 代码 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> actions </tag>
+            
+            <tag> deploy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu 19.10 优化</title>
       <link href="/ubuntu1910/"/>
       <url>/ubuntu1910/</url>
