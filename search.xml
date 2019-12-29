@@ -60,6 +60,19 @@
     
     
     <entry>
+      <title>Hello World</title>
+      <link href="/16107/"/>
+      <url>/16107/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><p>开个博客，写点东西，主要是对日常所学的分析和总结。</p><p>离开学校越来越久，下班之后摸鱼的时间也越来越长。希望往后能够勤奋一点吧。</p><pre><code class="highlight C"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string"><stdio.h></stdio.h></span></span><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span><span class="function"></span>{<span class="built_in">printf</span>(<span class="string">"Hello World!\n"</span>);}</code></pre></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Gridea git push 同步到多个仓库</title>
       <link href="/deploy-gridea-to-github-and-coding/"/>
       <url>/deploy-gridea-to-github-and-coding/</url>
@@ -6821,9 +6834,9 @@
       
         <tags>
             
-            <tag> wordpress </tag>
-            
             <tag> typecho </tag>
+            
+            <tag> wordpress </tag>
             
             <tag> 模版 </tag>
             
@@ -12811,9 +12824,9 @@
             
             <tag> 博客 </tag>
             
-            <tag> typecho </tag>
-            
             <tag> 插件 </tag>
+            
+            <tag> typecho </tag>
             
         </tags>
       
@@ -12929,9 +12942,9 @@
             
             <tag> blog </tag>
             
-            <tag> wordpress </tag>
-            
             <tag> typecho </tag>
+            
+            <tag> wordpress </tag>
             
         </tags>
       

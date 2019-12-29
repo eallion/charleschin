@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>大大的小蜗牛</title>
-  
+  <icon>https://www.gravatar.com/avatar/c686821c00797f9390732f8fe2c82b5f</icon>
   <subtitle>eallion</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eallion.com/"/>
-  <updated>2019-12-29T14:52:52.752Z</updated>
+  <updated>2019-12-29T16:53:52.276Z</updated>
   <id>https://eallion.com/</id>
   
   <author>
-    <name>eallion</name>
-    
+    <name>大大的小蜗牛</name>
+    <email>eallion@eallion.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -21,7 +21,7 @@
     <link href="https://eallion.com/butterfly/"/>
     <id>https://eallion.com/butterfly/</id>
     <published>2019-12-28T21:00:26.000Z</published>
-    <updated>2019-12-29T14:52:52.752Z</updated>
+    <updated>2019-12-29T16:53:52.276Z</updated>
     
     <summary type="html">
     
@@ -48,7 +48,7 @@
     <link href="https://eallion.com/github-actions-hexo-ci/"/>
     <id>https://eallion.com/github-actions-hexo-ci/</id>
     <published>2019-12-28T14:53:43.000Z</published>
-    <updated>2019-12-29T14:52:52.752Z</updated>
+    <updated>2019-12-29T16:53:52.276Z</updated>
     
     <summary type="html">
     
@@ -77,11 +77,28 @@
   </entry>
   
   <entry>
+    <title>Hello World</title>
+    <link href="https://eallion.com/16107/"/>
+    <id>https://eallion.com/16107/</id>
+    <published>2019-12-22T15:09:58.000Z</published>
+    <updated>2019-12-22T15:09:58.000Z</updated>
+    
+    <summary type="html">
+    
+      第一篇博文，随便写两句。
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Gridea git push 同步到多个仓库</title>
     <link href="https://eallion.com/deploy-gridea-to-github-and-coding/"/>
     <id>https://eallion.com/deploy-gridea-to-github-and-coding/</id>
     <published>2019-12-16T14:58:39.000Z</published>
-    <updated>2019-12-29T14:52:52.752Z</updated>
+    <updated>2019-12-29T16:53:52.276Z</updated>
     
     <summary type="html">
     
@@ -602,33 +619,6 @@
     
       <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>利川高空VR全景图</title>
-    <link href="https://eallion.com/vr-of-lichuan/"/>
-    <id>https://eallion.com/vr-of-lichuan/</id>
-    <published>2019-06-29T18:08:36.000Z</published>
-    <updated>2019-06-29T18:08:36.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;利川高空VR全景图&lt;br&gt;&lt;a href=&quot;https://720yun.com/t/f4fjvOmktu3?scene_id=20687628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
-    
-    
-      <category term="利川高空VR全景图" scheme="https://eallion.com/tags/%E5%88%A9%E5%B7%9D%E9%AB%98%E7%A9%BAVR%E5%85%A8%E6%99%AF%E5%9B%BE/"/>
     
   </entry>
   
