@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Linux架设CS1.6服务器教程 | 大大的小蜗牛</title><meta name="description" content="Linux架设CS1.6服务器教程"><meta name="keywords" content="CS,Ubuntu,linux,服务器,server,red hat"><meta name="author" content="大大的小蜗牛,eallion@eallion.com"><meta name="copyright" content="大大的小蜗牛"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Linux架设CS1.6服务器教程"><meta name="twitter:description" content="Linux架设CS1.6服务器教程"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-1.png"><meta property="og:type" content="article"><meta property="og:title" content="Linux架设CS1.6服务器教程"><meta property="og:url" content="https://eallion.com/linux-counter-strike-server"><meta property="og:site_name" content="大大的小蜗牛"><meta property="og:description" content="Linux架设CS1.6服务器教程"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-1.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://eallion.com/linux-counter-strike-server"><link rel="prev" title="QQ圈子" href="https://eallion.com/qq-quanzi"><link rel="next" title="自行车" href="https://eallion.com/bicycle"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-97690030-3', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://eallion.com/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"top-right"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="大大的小蜗牛" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">eallion</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-folder-open" aria-hidden="true"></i><span> 文章分类</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/daily/"><i class="fa-fw fa fa-folder-open"></i><span> 日志</span></a></li><li><a class="site-page" href="/categories/sz/"><i class="fa-fw fa fa-users"></i><span> 山贼</span></a></li><li><a class="site-page" href="/categories/share/"><i class="fa-fw fa fa-share-alt"></i><span> 分享</span></a></li><li><a class="site-page" href="/categories/code/"><i class="fa-fw fa fa-file-code-o"></i><span> 代码</span></a></li><li><a class="site-page" href="/categories/operation/"><i class="fa-fw fa fa-briefcase"></i><span> 运营</span></a></li><li><a class="site-page" href="/categories/talk/"><i class="fa-fw fa fa-twitter"></i><span> 嘀咕</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 更多</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://s.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-sitemap"></i><span> 导航</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 读书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></li><li><a class="site-page" href="https://dl.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud-download"></i><span> 下载</span></a></li><li><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-comments"></i><span> 留言</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">666</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1306</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-folder-open" aria-hidden="true"></i><span> 文章分类</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/daily/"><i class="fa-fw fa fa-folder-open"></i><span> 日志</span></a></li><li><a class="site-page" href="/categories/sz/"><i class="fa-fw fa fa-users"></i><span> 山贼</span></a></li><li><a class="site-page" href="/categories/share/"><i class="fa-fw fa fa-share-alt"></i><span> 分享</span></a></li><li><a class="site-page" href="/categories/code/"><i class="fa-fw fa fa-file-code-o"></i><span> 代码</span></a></li><li><a class="site-page" href="/categories/operation/"><i class="fa-fw fa fa-briefcase"></i><span> 运营</span></a></li><li><a class="site-page" href="/categories/talk/"><i class="fa-fw fa fa-twitter"></i><span> 嘀咕</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 更多</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://s.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-sitemap"></i><span> 导航</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 读书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></li><li><a class="site-page" href="https://dl.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud-download"></i><span> 下载</span></a></li><li><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-comments"></i><span> 留言</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#命令执行的结果是，我们得到steam和readme-txt两个文件，其中readme-txt文件是说明文件，steam是我们要得到的可执行文件。"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">命令执行的结果是，我们得到steam和readme.txt两个文件，其中readme.txt文件是说明文件，steam是我们要得到的可执行文件。</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#注意1：有可能在第一次启动hlds时报如下错误"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">*注意1：有可能在第一次启动hlds时报如下错误</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法："><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法：</span></a></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#命令执行的结果是，我们得到steam和readme-txt两个文件，其中readme-txt文件是说明文件，steam是我们要得到的可执行文件。"><span class="toc-number">1.</span> <span class="toc-text">命令执行的结果是，我们得到steam和readme.txt两个文件，其中readme.txt文件是说明文件，steam是我们要得到的可执行文件。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意1：有可能在第一次启动hlds时报如下错误"><span class="toc-number">2.</span> <span class="toc-text">*注意1：有可能在第一次启动hlds时报如下错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法："><span class="toc-number">3.</span> <span class="toc-text">实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法：</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-1.png)"><div id="post-info"><div id="post-title"><div class="posttitle">Linux架设CS1.6服务器教程</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2012-03-21<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2012-03-27</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/share/">分享</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">5.9k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 20 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><html><head></head><body><blockquote>　　<strong>前言</strong>：由于linux系统的高性能和稳定性，非常适合作为cs1.6这种对服务器硬件要求较高的服务端，（服务器端可达到1000fps），因此国外绝大多数的cs1.6服务器均采用linux做为服务器的操作系统。本文也只针对linux系统下架设cs1.6服务器及其扩展功能展开讨论，本文借鉴了网络上前人的经验，在此对他们无私的奉献表示感谢！这是本人第一次写cs.16服务器教程，难免存在疏漏或错误，希望各位同仁批评指正！
+（本文最初发表在点通论坛，如需转载，请注明出处！作者：<a href="http://www.dt-club.net/forum.php?mod=viewthread&tid=46567" target="_blank">disremember</a>）</blockquote>
+<strong>第一部分：</strong>
+　　将涉及到网络的一些基础知识，以及linux的系统一些必要的基本命令、远程登陆工具的下载和使用方法，有了这些基础知识，将会使我们能较为顺利地完成cs.16服务器在linux系统下的成功架设和调试。
+１、本文假设你已经具备有一台运行着的linux操作系统的服务器，并且掌握着root密码（我写教程的测试系统是red hat linux 5.4）；
+２、这台服务器至少有一块网卡，网卡配置一个固定的局域网ip地址，例如：192.168.11.77
+３、这台服务器必须物理连接在你单位的局域网网络，其他机器能访问的到；
+４、（不是必须）为了让互联网上的玩家刷出你的服务器并能进入，你的路由器必须映射一个物理ip地址（即互联网ip）到这台服务器，例如：219.148.149.87
+路由器做物理ip映射的方法是配置nat参数，以（思科cisco3700）为例：
+<blockquote># ip nat inside source static 192.168.11.77 219.148.149.87</blockquote>
+５、为了不使接下来的工作出现困惑，我们建议暂时关闭linux防火墙，
+请在linux服务器上执行下面命令来暂时关闭防火墙：
+<blockquote>＃service iptables stop</blockquote>
+（注意：关闭linux防火墙是十分危险的，我们将在第四部分详细讨论linux防火墙设置）
+
+<p>以上的前期准备完成之后，我们将从一台winXP系统的pc电脑来远程操作那台linux服务器，即远程安装cs.16服务端。</p>
+<p>提示：<br>我们将使用PieTTY.exe这个小软件来远程登录linux服务器，PieTTY遵循一种较新的叫做ssh的协议，ssh这是比telnet更好的协议，安全且快捷，使用端口22。在PieTTY的linux仿真终端窗口中远程操作就好像在那台服务器上操作一样。</p>
+<p>首先，我们先来下载PieTTY，下载后请把它放在你的windows桌面，然后双击执行，在打开的小窗中输入远程linux服务器的ip地址，单击[Open]进入linux仿真终端窗口，输入用户名root和口令。<br>如果登录失败，可能的原因有３个：<br>第一个原因，是你在PieTTY里填入的ip或密码不正确，请核对你的参数是否正确，<br>第二个原因，是linux服务器的ssh服务未启动，如果是这种情况，那就需要我们到那台linux服务器上，来手动启动ssh服务，启动ssh的命令是：</p>
+<blockquote># /etc/init.d/sshd start</blockquote>
+如果ssh正常启动，系统会提示....ok
+
+<p>你可以使用下面命令来查看ssh服务是否已经工作了</p>
+<blockquote>＃netstat -anp | grep sshd</blockquote>
+第三个原因，是linux防火墙阻拦，请确认服务器防火墙已关闭（参照第一部分５）
+
+<p>然后返回到WinXp的电脑上</p>
+<p>至此，我们以后工作将在PieTTY的linux终端窗口中完成，即所有linux命令在这个窗口里输入和执行，<br>下面我们正式开始：<br>１、在linux系统中建立一个目录，我们先进入系统的/home分区，然后建立一个新目录hlds_l_4617（因为我下载的是4617版本的cs1.6，所以用版本号以示区别），之后进入新建的目录，命令如下：</p>
+<blockquote># cd /home
+# mkdir hlds_l_4617
+# cd hlds_l_4617</blockquote>
+
+<p>２、输入下面命令下载cs1.6 服务器专用下载工具</p>
+<blockquote># wget http://storefront.steampowered.com/download/hldsupdatetool.bin</blockquote>
+看到上面的画面提示，说明专用工具hldsupdatetool.bin已经下载完成了。
+
+<p>３、给刚下载回来的hldsupdatetool.bin授予可执行权限，命令如下：</p>
+<blockquote># chmod 0755 hldsupdatetool.bin</blockquote>（注：如果你未用chmod命令给一个文件授权可执行，linux系统会提示"Permission denied（无执行权限）"错误。 可见，linux的安全机制确实是windows2003无法比拟的，所以即便一个病毒程序已经进入到linxu中，如果服务器的操作员不用chmod命令授予它可执行权限，那病毒程序也是无法发作的）
+
+<p>４、现在执行hldsupdatetool.bin程序，来释放出steam程序（steam才是真正下载cs1.6服务器全部文件的关键程序），命令如下：</p>
+<blockquote># ./hldsupdatetool.bin</blockquote>
+这个命令执行过程中你会遇到是否真正的下载的提示，请回答yes，然后【回车】。
+
+<h2 id="命令执行的结果是，我们得到steam和readme-txt两个文件，其中readme-txt文件是说明文件，steam是我们要得到的可执行文件。"><a href="#命令执行的结果是，我们得到steam和readme-txt两个文件，其中readme-txt文件是说明文件，steam是我们要得到的可执行文件。" class="headerlink" title="命令执行的结果是，我们得到steam和readme.txt两个文件，其中readme.txt文件是说明文件，steam是我们要得到的可执行文件。"></a>命令执行的结果是，我们得到steam和readme.txt两个文件，其中readme.txt文件是说明文件，steam是我们要得到的可执行文件。</h2><p>注意：在更高版本的linux系统中执行./hldsupdatetool.bin时，可能会提示如下错误：<br>sh: uncompress: command not found<br>此时请先执行下面命令，之后重新执行./hldsupdatetool.bin</p>
+<blockquote># ln -s /usr/bin/gunzip /usr/bin/uncompress</blockquote>--------------------------------------------------------------------------
+
+<p>５。下面我们执行steam程序开始下载cs1.6服务端的全部文件（因为valve公司服务器在国外，所以在国内下载过程时间比较长，我的光纤网络也整整用了一个晚上，这个命令如下：</p>
+<blockquote># ./steam -command update -game cstrike -dir . -retry</blockquote>
+参数说明：
+-game cstrike　：这个参数告诉steam你要下载的是反恐精英cs1.6（如果你需要下载的是【反恐精英－起源】那么把这个参数改为-game "Counter-Strike Source"）
+-dir　：意思是将全部文件下载到当前目录，我们当前的目录是/home/hlds_l_4617
+-retry　：网络断线自动重新尝试下载，即断点续传
+
+<p>现在你可以睡一觉或干点别的了，耐心等待它下载完成。<br><strong>第二部分：</strong><br>　　讲述使用hldsudatetool.bin专用工具下载hlds（cs1.6服务端程序）最新版本，以及当前最新版本4617（４８协议）的hlds服务端的安装与调试。（注：.bin扩展名文件是red hat linux系统下的可执行程序，就像win系统下的.exe程序一样）</p>
+<p>经过艰难而又漫长的下载过程，我们终于得到了linux下架设cs.16服务器全部服务端文件和l程序，令人激动的时刻即将来临，现在到了把它运行起来的时候了，我们将真正拥有属于我们自己的cs.16服务器了。</p>
+<p>执行启动命令：</p>
+<blockquote># ./hlds_run -binary ./hlds_i686 -console -game cstrike -insecure -pingboost 3 -port 27015 +maxplayers 32 +map de_dust2 +sv_lan 0 -noipx -nojoy -nohltv</blockquote>
+参数说明：
+hlds_i686     适用于Inter公司的cpu，如果你服务器cpu是AMD，请把参数改为：hlds_amd或hlds_amd64
+-console      控制台模式
+-insecure     屏蔽官方AVC反作弊（使D版客户端能登录）
+-pingboost 3     服务器加速（此为linux下专用参数，而win32下使用插件方式加速）
+-port 27015      玩家客户端登录端口
++maxplayers 32     允许的最大玩家数
++map de_dust2     启动时加载的地图
++sv_lan 0       为0时，允许互联网/局域网都可登录，为1时，只允许局域网登录
+-noipx    不使用ipx网络协议
+-nojoy    不支持摇杆
+-nohltv   关闭视频广播
+
+<p>上面命令打在一行上，不要分行。</p>
+<p>当你看到上面的信息，那么祝贺你，说明你的cs1.6服务器已经正常运行起来了！</p>
+<h2 id="注意1：有可能在第一次启动hlds时报如下错误"><a href="#注意1：有可能在第一次启动hlds时报如下错误" class="headerlink" title="*注意1：有可能在第一次启动hlds时报如下错误"></a>*注意1：有可能在第一次启动hlds时报如下错误</h2><p>scandir failed:/home/hlds_l_4617/valve/SAVE<br>scandir failed:/home/hlds_l_4617/platform/SAVE</p>
+<hr>
+<p>说明缺少这2个目录未建立，请建立所需的目录</p>
+<blockquote># mkdir /home/hlds_l_4617/valve/SAVE
+# mkdir /home/hlds_l_4617/platform/SAVE</blockquote>
+*注意2: 也可能报下面的错误
+-----------------------------------
+couldn't exec listip.cfg
+couldn't exec banned.cfg
+------------------------------------
+说明缺少这2个文件未建立，请建立它们:（空文件即可）
+<blockquote># sudo vi /home/hlds_l_4617/cstrike/listip.cfg
+#sudo vi /home/hlds_l_4617/cstrike/banned.cfg</blockquote>
+说明:
+--------------------------------------------------------
+listip.cfg              存放的是踢出的玩家ip
+banned.cfg         存放的是被管理员封禁的玩家ip
+---------------------------------------------------------
+
+<p>这个cs1.6服务器搭建起来了，但现在我们拥有的是个干净的且纯正版的服务器，只有新版本（４８协议）且正版cs1.6客户端（如4554）的玩家才可以进入，但D版和低版本（４７协议）的客户端玩家还不能进。我们将在接下来的部分讨论如何利用dproto插件来解决这个问题。</p>
+<p>另外这台cs1.6服务器的server.cfg（cs1.6服务器配置文件）还是初始缺省值，以后还需要对其进行详细配置（请参考有关文献），以使这台cs1.6服务器性能达到最优化。</p>
+<p>现在按键盘上的 CTRL+C 来终止cs.16服务器运行，　接着做下面的工作。<br><strong>第三部分</strong>：<br>　　这部分内容是关于dproto模块插件的，这个插件将解决老版本（47协议）和新版本（48协议）客户端的登录问题，经过安装配置和后，你的这台cs1.6服务器将允许47/48两种协议的non-steam（D版）客户端进入游戏。<br>Crock是个伟大的程序员，他用c语言以及他的聪明才智开发了dproto模块插件程序，打破了valve公司对D版cs1.6客户端的封锁，2008年12月Crock最初把dproto插件发布在cs.rin.ru论坛上，经过不断的升级，目前版本是0.3.7，他发表的论坛网址如下：<br><a href="http://cs.rin.ru/forum/viewtopic.php?f=29&t=52728" target="_blank">http://cs.rin.ru/forum/viewtopic.php?f=29&t=52728</a></p>
+<p>dproto模块插件的伟大之处在于它并不修改原版cs.16服务端半个字节，却能让低版本（４７协议）和高版本（４８协议）以及这两种协议的D版客户端都能进入升级后的cs1.6服务器，dproto运行在MetaMod平台上，因而dproto不是破解程序而仅仅是合法的插件，Metamod是cs.16服务端标准扩展平台，著名的反作弊插件sxe、amxmodx以及valve本公司的反作弊插件VAC也运行在这个平台上，</p>
+<p>现在我们开始讨论安装dproto v0.3.7</p>
+<p>上面我们说过，dproto是个插件，因此它需要Matamod（hlds扩展平台）的支持，那么我们要安装dproto的话就需要先安装Matamod平台，下面我们分两步来做：<br>１、安装和测试Matamod平台<br>２、安装测试dproto插件<br>（一）、安装和测试matamod平台<br>输入下面的命令，下载Matemod的linux版本：<br>提示：我们当前所在的目录是/home/hlds_l_4617 ，文件将下载到当前目录</p>
+<blockquote># wget http://prdownloads.sourceforge.net/metamod-p/metamod-p-1.19p32-linux_i586.tar.gz?download</blockquote>
+输入下面命令查看下载的文件名：
+<blockquote># ls</blockquote>
+metamod-p-1.19p32-linux_i586.tar.gz　这就是我们刚下载到的文件
+输入下面命令将该文件解压缩
+<blockquote># tar -zxvf metamod-p-1.19p32-linux_i586.tar.gz</blockquote>
+tar -zxvf参数解释 
+-z 是配合解压.GZ的 
+-x 解开一个包文件 
+-v 显示详细信息 
+-f 必须，表示使用归档文件
+
+<p>metamod官方网站地址（备用）：<br><a href="http://metamod-p.sourceforge.net/" target="_blank" rel="noopener">http://metamod-p.sourceforge.net/</a></p>
+<p>然后查看一下解压结果：</p>
+<blockquote># ls</blockquote>
+
+<p>metamod_i386.so就是我们解压缩释放出来的linux可执行文件，<br>现在我们终于得到了metamod_i386.so，接着我们开始用它布置metamod平台</p>
+<p>布置metamod平台需要２个步骤：<br>１。在cstrike目录里建立metamod存放目录，然后将metamod_i386.so复制到建好的目录里<br>输入下列命令完成目录创建：</p>
+<blockquote># mkdir cstrike/addons
+# mkdir cstrike/addons/metamod
+# mkdir cstrike/addons/metamod/dlls</blockquote>
+创建好所需的目录后，将metamod_i386.so复制到cstrike/addons/metamod/dlls目录中
+输入复制命令：
+<blockquote># cp metamod_i386.so cstrike/addons/metamod/dlls</blockquote>
+命令执行后，metamod_i386.so的绝对位置应该在：
+/home/hlds_l_4617/cstrike/addons/metamod/dlls/metamod_i386.so
+
+<p>２。为了让metamod平台随hlds启动起来，我们需要修改liblist.gam配置文件<br>它的位置在：<br>../cstrike/liblist.gam</p>
+<p>输入vi命令来编辑liblist.gam配置文件</p>
+<blockquote># sudo vi cstrike/liblist.gam</blockquote>
+进入vi的文本编辑环境以后，按键盘上的"I"进入文本编辑模式：
+将liblist.gam中下面这一行：
+gamedll_linux "dlls/cs_i386.so"
+修改为：
+gamedll_chain "dlls/cs_i386.so"
+
+<p>然后在下面添加一行：<br>gamedll_linux “addons/metamod/dlls/metamod_i386.so”</p>
+<p>修改后看起来应该是这样子的：</p>
+<p>gamedll_chain “dlls/cs_i386.so”<br>gamedll_linux “addons/metamod/dlls/metamod_i386.so”</p>
+<p>修改后，按键盘上的’ESC’键回退到vi控制模式，然后输入命令 :wq ，然后【回车】，保存和退出。</p>
+<p>（注：linux下的文本编辑工具是vi ，vi有两种模式，编辑模式和控制模式，按’I’进入编辑模式，按’ESC’回退到vi控制模式，vi编辑器的命令很强大也很灵活，这里不做论述，其详细使用方法请查看其他有关文献）</p>
+<p>接下来我们启动hlds服务端程序，看metamod是不是跟随cs1.6服务器一起启动了<br>我们再次执行hlds启动命令：</p>
+<blockquote># ./hlds_run -console -game cstrike -condebug -insecure -pingboost 3 -port 27015 +maxplayers 32 +map de_dust2 +sv_lan 0 -noipx -nojoy -nohltv</blockquote>
+
+<p>截图上的信息表示，metamod已经运行起来了，版本为1.19p32</p>
+<p>我们先终止hlds服务（按键盘上的 CTRL+C　）</p>
+<p>接下来我们进行重要的一步工作，下载和安装dproto插件，让我们的cs1.6服务器允许（47/48协议）和D版客户端进入。</p>
+<p>（二）、安装和测试dproto插件<br>由于Crock发布dproto插件的打包方式是.rar，所以我们需要先在winXp电脑上下载并解开压缩包，然后再将释放出的插件程序上传到linux服务器上，<br>请在你的winXp电脑上下载dproto的最新版本：<br><a href="http://cs.rin.ru/forum/viewtopic.php?f=29&t=52728" target="_blank" rel="noopener">http://cs.rin.ru/forum/viewtopic.php?f=29&t=52728</a><br>当前最新版本是0.3.7，包文件名为dproto_0_3_7.rar（包中含有linux和windows两种程序分别应用于这两种操作系统）</p>
+<p>解开压缩包以后，在文件夹中可以找到dproto_i386.so和一个dproto.cfg两个文件（不要修改dproto.cfg的内容），这两个文件是本教程需要的，</p>
+<p>另外，你还会看到有扩展名为.dll的文件，这是为windows操作系统使用的文件，不是我们需要的，我们可以不去理它们。</p>
+<p>再有就是开发dproto的c语言源程序，有兴趣的读者可以分析一下它c代码，以及未编译的amxx应用源程序。</p>
+<p>下面我们继续做我们该做的工作，<br>１。在linux服务器上创建dproto工作目录</p>
+<blockquote># mkdir cstrike/addons/dproto</blockquote>
+２。使用工具软件SSHSecureShellClient v3.29把dproto_i386.so和dproto.cfg上传到远程linux服务器的相应目录中
+SSHSecureShellClient v3.29下载：
+http://www.v.bdjy.cn/out/download_oracle.jsp?db=nav_c_blobdata&id=1202
+
+<p>上传后，dproto相关的文件绝对位置应该是这样子的：<br>/home/hlds_l_4617/cstrike/addons/dproto/dproto_i386.so<br>/home/hlds_l_4617/cstrike/dproto.cfg</p>
+<p>２。用vi为metamod平台创建plugins.ini配置文件，在plugins.ini中告诉metamod平台dproto的存在和位置。<br>执行下面命令：</p>
+<blockquote># sudo vi cstrike/addons/metamod/plugins.ini</blockquote>
+按键盘上的'I'键进入编辑模式，
+添加下面一行
+linux addons/dproto/dproto_i386.so
+
+<p>然后按键盘上的’Esc’键回退到vi控制模式，输入:wq　，然后【回车】，保存退出</p>
+<p>你刚才创建的plugins.ini文件的绝对位置应该在：<br>/home/hlds_l_4617/cstrike/addons/metamod/plugins.ini</p>
+<p>现在，你终于可以松下心来了，我们终于做好了所有的工作，一台实用的cs1.6服务器终于做好了，我们现在第三次启动hlds服务<br>输入启动命令：</p>
+<blockquote># ./hlds_run -console -game cstrike -condebug -insecure -pingboost 3 -port 27015 +maxplayers 32 +map de_dust2 +sv_lan 0 -noipx -nojoy -nohltv</blockquote>
+
+<p>上面的信息显示，dproto已随hlds启动并且正常运行，现在，是真正向你表示祝贺的时候了！</p>
+<p>到此，你的这台实用的cs1.6服务器已架设完成了，这台服务器已经能够接受（４７/４８协议）和D版客户端在互联网上刷出你的服务器并进入，也允许局域网中的朋友们进入！</p>
+<p>接下来你可能会遇到小问题，即当你关闭PieTTY终端窗口或关闭电脑，你服务器上的cs.16服务端程序也随之终止运行了，不用担心，你只需创建一个linux下的一个包含hlds启动命令的批处理文件，然后执行一下就解决问题了，<br>方法如下：<br>输入下列命令创建批命令文件（我们将这个批处理命令命名为hlds4617.sh）</p>
+<blockquote># sudo vi hlds4617.sh</blockquote>
+按键盘上的'I'键进入vi编辑模式，然后将hlds的启动命令写进去：
+<blockquote># ./hlds_run -console -game cstrike -condebug -insecure -pingboost 3 -port 27015 +maxplayers 32 +map de_dust2 +sv_lan 0 -noipx -nojoy -nohltv</blockquote>
+
+<p>然后按键盘上的’Esc’键，回退到vi控制模式，输入:wq  ，然后【回车】，保存退出。</p>
+<p>执行刚刚建立的这个批命令文件：</p>
+<blockquote># nohup ./hlds4617.sh &</blockquote>
+（注意：不要少了命令最后面的 '&'）
+
+<p>或者:</p>
+<blockquote># ./hlds.sh &</blockquote>
+命令执行后，你可以退出PieTTY或关闭个人电脑了，而cs.16服务端程序将在那台linux服务器继续运行。
+<strong>第四部分</strong>：
+　　配置linux的防火墙，让你的cs1.6服务器注册到valve列表服务器，以便让玩家客户端刷出你的服务器。
+关于cs.16服务器所使用的端口及网络通讯协议，以及linux防火墙iptables的设置
+
+<p>先说点儿题外话：<br>　　　能读本教程到这一部分的人，是十分令人敬佩的，之所以这么说，是基于两点，<br>第一点：linux操作系统，不是一个像windows2003那样容易掌握好的系统。<br>第二点：本人第一次写linux环境下的教程，虽然竭尽全力地想尽量解释清楚每一步在做什么，但由于文字水平有限，不可避免的有词不达意的地方，所以本文当中不可避免的出现（虽然我极力的去避免）我意想不到的一些知识陷阱，<br>       能坚持到现在的读者，我知道，你是个很有毅力的人，我也知道本教程一定无数次地把你引入歧途，但庆幸的是你还是靠自己的力量挣脱出并回归到正确轨道上，在此本人对你表示深深的敬意！<br>待续。。。。</p>
+<p>前段时间比较忙碌，接着就是过年，现在有点时间了，我们继续完成本教程：<br>　　在下面的部分中，我们开始讨论cs1.6服务器所使用的一些端口，以及它的数据传输协议，并通过配置linux防火墙iptables，让我们的cs1.6服务器安全、稳定、高效的运行。</p>
+<pre><code>cs1.6服务器端运行以后，会开通一些端口，我们得使用一些手段来查明到底cs1.6服务器端使用了哪些端口，首先，我们在启动cs1.6服务器端的时候，可以看到它开启的所用到的端口，然后，我们再用一个命令来查明它运行后使用了哪些端口。</code></pre><p>截图中的信息表示，hlds启动使用了27010和27013两个端口（注意：你服务器的启动端口不一定与此相同），它们分别将你的cs1.6服务器注册到valve的两个列表服务器上（玩家客户端依赖这两个服务器刷出你的服），<br>然后我们使用一个linux命令查看你的cs1.6服务器端还使用了哪些端口，输入下面命令：</p>
+<blockquote># netstat -anp | grep hlds</blockquote>
+
+<p>截图信息显示，我们的cs1.6服务器端运行还使用两个端口，27015和26900<br>通过上面做过的工作，我们知道一个cs1.6服务器端启动和运行时，需使用的端口一共有４个，使用udp（不是tcp）网络协议，即：<br>27010<br>27013<br>27015<br>26900</p>
+<p>下面我们通过修改iptables配置文件，来进行linux防火墙新规则配置<br>执行命令：</p>
+<blockquote># sudo vi /etc/sysconfig/iptables</blockquote>
+在文件末尾添加下列代码
+-A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 27010 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 27013 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 27015 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 26900 -j ACCEPT
+-A RH-Firewall-1-INPUT -j REJECT --reject-with icmp-host-prohibited COMMIT
+然后保存退出
+
+<p>重启防火墙，使新规则生效</p>
+<blockquote># sudo service iptables restart</blockquote>
+系统会提示...ok 
+
+<p>到此，这台cs1.6服务器的防火墙配置完成了，以后可以放心的让它在互联网上运行了。<br><strong>第五部分</strong>：<br>　　关于Linux下的hlds4617的性能（fps）的调整。让我们来实现传说中的1000fps的cs1.6服务器。<br>关于linux下的hlds4617服务器性能（fps）的调整，使hlds服务器端达到1000fps。</p>
+<p>若想使服务器端的fps达到1000，这在linux系统下是十分容易做到的，其关键之处在于两个地方：<br>1、是在启动命令中必须有-pingboost 3参数（参照第一部分的启动参数）；<br>2、是需要在游戏中用管理员身份（不是amxx中的op）执行sys_ticrate命令；<br>3、如果跳ping，控制方法是提高hlds_run的优先级。</p>
+<pre><code>注意：此处讨论的是hlds服务器端的fps调整，服务器端的fps越高，玩家客户端（参数与服务器匹配）就越流畅。
+服务器fps并不是越高越好（根据服务器性能），而是“高且稳定为最好”。
+
+影响服务器端fps的参数是sys_ticrate（默认值60）的值，我们需要结合rcon stats命令，来设置一个最佳的sys_ticrate的值，具体方法是：</code></pre><p>1、运行cs客户端，进入我们的服务器<br>2、按键盘左上角的“`”键调出客户端控制台（rcon），rcon_password（服务器管理口令）使自己变为管理员身份（如图）</p>
+<p>(注：管理口令在服务器端的server.cfg设置，如果没有设置，需在server.cfg中添加下面一行：<br>rcon_password “12345678”    //管理口令就是12345678，你可以更改这个口令。</p>
+<p>3、使用rcon stats 命令，查看当前服务器的fps值。</p>
+<p>4。例如想把hlds服务器端fps调证到1000（前提是你的服务器性能要达到这个要求），可以使用命令：rcon sys_ticrate 3000 （注：参数要增加到预设值的2倍以上） 。</p>
+<h2 id="实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法："><a href="#实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法：" class="headerlink" title="实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法："></a>实际运行中你可能会遇到服务器端fps不稳的情况，间或有跌到800fps甚至500fps，对于这种情况，网友weyoung给出一个思路，你可以参照他提供的办法：</h2><p>如果出现跳PING现象,改变程序HLDS的优先级就可以了!<br>//显示当前活动的进程，命令:</p>
+<blockquote># top</blockquote>
+截图显示，hlds_run的进程号PID=3305，优先级为10 ，cpu使用率：3.0%，内存占用率：8.3%。
+你也可以使用ps -e命令查看所有进程（包括不活动的）
+
+<p>若要将它优先级提高，执行下面命令：</p>
+<blockquote># renice -10 3305</blockquote>
+然后再进程查看命令：
+<blockquote># top</blockquote>
+截图显示，hlds_run进程优先级由+10改为-10，以此方法来提高hlds的优先级，使我们的cs1.6服务器fps高且稳定（注：linux的进程优先级范围是－20，+19，数字越小，优先级越高）。
+
+<p>注意：图片显示的进程修改后的优先级是错的，应以教程文字为准。</p>
+</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:eallion@eallion.com">大大的小蜗牛</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://eallion.com/linux-counter-strike-server">https://eallion.com/linux-counter-strike-server</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CS/">CS    </a><a class="post-meta__tags" href="/tags/Ubuntu/">Ubuntu    </a><a class="post-meta__tags" href="/tags/linux/">linux    </a><a class="post-meta__tags" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器    </a><a class="post-meta__tags" href="/tags/server/">server    </a><a class="post-meta__tags" href="/tags/red-hat/">red hat    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-1.png" data-sites="twitter,facebook,weibo,wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.png" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/qq-quanzi"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-1.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>QQ圈子</span></div></a></div><div class="next-post pull_right"><a href="/bicycle"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-1.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>自行车</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/ubuntu-12-04" title="Ubuntu 12.04 LTS today"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-2.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">Ubuntu 12.04 LTS today</div></div></a></div><div class="relatedPosts_item"><a href="/yandex-browser-ubuntu" title="Yandex Browser Beta Ubuntu"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-4.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">Yandex Browser Beta Ubuntu</div></div></a></div><div class="relatedPosts_item"><a href="/ubuntu-wps-cant-input-chinese" title="ubuntu wps 不能输入中文解决"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-5.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">ubuntu wps 不能输入中文解决</div></div></a></div><div class="relatedPosts_item"><a href="/mosh" title="Ubuntu Server 安装 Mosh"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-10.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">Ubuntu Server 安装 Mosh</div></div></a></div><div class="relatedPosts_item"><a href="/nextcloud" title="Ubuntu Server snap 安装 Nextcloud"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-10.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">Ubuntu Server snap 安装 Nextcloud</div></div></a></div><div class="relatedPosts_item"><a href="/egames" title="电子竞技奥运会"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-8.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">电子竞技奥运会</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = true == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'XKYK4KiRIhNnPNDIXKli2tMU-9Nh9j0Va',
+  appKey:'21Rd85t71rpHhqHCj6rQEnTn',
+  placeholder:'说点什么吧……',
+  avatar:'',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2006 - 2019 大大的小蜗牛.com</div><div class="footer_custom_text"><span>Powered by</span> <a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">&middot;</span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a><span class="footer-separator">&middot;</span><a href="https://eallion.github.io" target="_blank" rel="noopener"><span>Git Pages</span></a></div><div class="icp"><a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"><span>浙ICP备16031768号-2</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script async src="//cdn.busuanzi.ibruce.info/cdn/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script><script>pangu.spacingElementById('body-wrap');</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

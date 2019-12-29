@@ -1,5 +1,3 @@
-# charleschin.com  source code
-
-[https://charleschin.com](https://charleschin.com)
-
-HTML+CSS+JS
+# hexo blog
+### Hexo blog builder via Github actions
+[https://eallion.com](https://eallion.com)
