@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>《功夫熊猫》是文化侵略吗 | 大大的小蜗牛</title><meta name="description" content="《功夫熊猫》是文化侵略吗"><meta name="keywords" content="文化,熊猫,功夫熊猫,文化侵略,侵略"><meta name="author" content="大大的小蜗牛,eallion@eallion.com"><meta name="copyright" content="大大的小蜗牛"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="《功夫熊猫》是文化侵略吗"><meta name="twitter:description" content="《功夫熊猫》是文化侵略吗"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-8.png"><meta property="og:type" content="article"><meta property="og:title" content="《功夫熊猫》是文化侵略吗"><meta property="og:url" content="https://eallion.com/kongfupanda/"><meta property="og:site_name" content="大大的小蜗牛"><meta property="og:description" content="《功夫熊猫》是文化侵略吗"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-8.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://eallion.com/kongfupanda/"><link rel="prev" title="无题" href="https://eallion.com/untitled/"><link rel="next" title="爱一个人" href="https://eallion.com/love-someone/"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-97690030-3', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://eallion.com/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"top-right"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="大大的小蜗牛" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">eallion</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-folder-open" aria-hidden="true"></i><span> 文章分类</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/daily/"><i class="fa-fw fa fa-folder-open"></i><span> 日志</span></a></li><li><a class="site-page" href="/categories/sz/"><i class="fa-fw fa fa-users"></i><span> 山贼</span></a></li><li><a class="site-page" href="/categories/share/"><i class="fa-fw fa fa-share-alt"></i><span> 分享</span></a></li><li><a class="site-page" href="/categories/code/"><i class="fa-fw fa fa-file-code-o"></i><span> 代码</span></a></li><li><a class="site-page" href="/categories/operation/"><i class="fa-fw fa fa-briefcase"></i><span> 运营</span></a></li><li><a class="site-page" href="/categories/talk/"><i class="fa-fw fa fa-twitter"></i><span> 嘀咕</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 更多</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://s.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-sitemap"></i><span> 导航</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 读书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></li><li><a class="site-page" href="https://dl.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud-download"></i><span> 下载</span></a></li><li><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-comments"></i><span> 留言</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">666</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1306</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-folder-open" aria-hidden="true"></i><span> 文章分类</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/daily/"><i class="fa-fw fa fa-folder-open"></i><span> 日志</span></a></li><li><a class="site-page" href="/categories/sz/"><i class="fa-fw fa fa-users"></i><span> 山贼</span></a></li><li><a class="site-page" href="/categories/share/"><i class="fa-fw fa fa-share-alt"></i><span> 分享</span></a></li><li><a class="site-page" href="/categories/code/"><i class="fa-fw fa fa-file-code-o"></i><span> 代码</span></a></li><li><a class="site-page" href="/categories/operation/"><i class="fa-fw fa fa-briefcase"></i><span> 运营</span></a></li><li><a class="site-page" href="/categories/talk/"><i class="fa-fw fa fa-twitter"></i><span> 嘀咕</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 更多</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://s.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-sitemap"></i><span> 导航</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 读书</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></li><li><a class="site-page" href="https://dl.eallion.com" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud-download"></i><span> 下载</span></a></li><li><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-comments"></i><span> 留言</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-8.png)"><div id="post-info"><div id="post-title"><div class="posttitle">《功夫熊猫》是文化侵略吗</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2011-06-01<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2011-06-01</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/share/">分享</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">2.2k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 6 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><html><head></head><body><blockquote><strong>导语</strong>：
+靠大熊猫吃饭的人有两种，一种是饲养员，一种是赵半狄。随着《功夫熊猫》续集在中国上映，这位“熊猫艺术家”又开始了他的抵制之路。
+赵半狄认为《功夫熊猫》是“文化侵略”，而北大教授孔庆东更表示，“好莱坞不仅在赚你的钱，还要洗你的脑，还要征服你的心”，那么，究竟什么是文化侵略，赵半狄和他的支持者大概需要上一课。
+
+<p>原文链接：<a href="http://view.news.qq.com/zt2011/wenhuaqinlue/index.htm" target="_blank">http://view.news.qq.com/zt2011/wenhuaqinlue/index.htm</a></p></blockquote><p></p>
+<p><strong>一，抵制《功夫熊猫》的逻辑</strong></p>
+<p>在2008年6月《功夫熊猫》上映时，赵半狄曾举着“不容许好莱坞在劫后余生的中国捞金”的横幅，来到广电总局呼吁抵制其在中国的上映。赵半狄找出了关于《功夫熊猫》的多项“罪证”，包括功夫熊猫是绿眼睛的，熊猫的爸爸是只鸭子，教功夫的是一只浣熊等等。此外，他尤其建议《功夫熊猫》不要在四川上映，因为“灾区人民情绪不是很稳定”，结果功夫熊猫在四川延迟上映，但上映当天打破了成都的动画片首日票房纪录。</p>
+<p>从常识来讲，如果一部电影让人觉得反感，那么大家不去看就是了，《功夫熊猫》能够创造很好的票房成绩，说明一部分中国人对它很感兴趣。为什么要禁止人们看一部自己喜欢的外国电影？这中间有一个神奇的词语叫“文化侵略”，在反对“文化侵略”的先知式人物看来，人民是无知的孩童，他们根本不辨善恶，很容易被美国电影洗脑，只有他们才能目光如炬的看到真正的问题——你觉得《孔子》又老套又无聊吗？这就是你被《阿凡达》洗脑的结果</p>
+<p><strong>二，什么是真正的“文化侵略”</strong></p>
+<p><strong>1，“文化侵略”是强行的文化和思想改造</strong></p>
+<p>文化侵略这个词，一般是指一个国家对另一个国家的人民强制进行文化改造和思想改造，具体包括强行改变另一个国家的教育方式，强制学习异国的文化内容等等。例如二战时期，日本在其中国占领区强行推广日语教育，废除汉语教育，这就是典型的文化侵略；小学课文《最后一课》里，普鲁士强迫其法国占领区的学生学德语，也是文化侵略。如果把“文化”一词扩展到生活方式和伦常日用，满清入关后要求汉族男人必须留辫子，显然也是一种文化侵略，文化侵略的共同特点是，这些“文化”并不是占领区的人们所自愿接受的，而是在强制之下被迫接受的。</p>
+<p><strong>2，“侵略”只能建立在强制上</strong></p>
+<p>有人认为，以上只是战争年代的“文化入侵”方式，和平年代的文化入侵则包括通过文化交流的方式，让对方国民自行改变其风俗习惯，隔绝其文化传承。这种说法看来很高瞻远瞩，然而却经不起分析，因为这等于是否定了任何国与国之间的文化交流——只要某人喜欢外来文化，那么就等于是被外来文化“侵略”了。按照这个逻辑，任何外来文化，都带着侵略的目的，都必须进行抵制，不知道自觉抵制文化侵略的赵半狄先生的MP3里面，是不是装的都是京剧——流行音乐和摇滚乐，显然都是外来文化的产物。</p>
+<p><strong>3，“文化侵略”是美国的阴谋？</strong></p>
+<p>据说在不太可能打大仗的和平年代，推广美国价值观，是美国不战而屈人之兵的核心利益。不过显然，美国人不太把这个“核心利益”当回事，例如美国几乎每和中国起贸易摩擦就要祭起“知识产权保护”的大旗。按理说，盗版传播美国的电影、音乐，绝对符合美国文化侵略这个“核心利益”，盗版者简直就是美国文化入侵的皇协军，因为中国人不太喜欢买正版，盗版者在这场“没有硝烟的文化战争”里面绝对居功至伟。但无法解释的是，每次抗议中国产权保护问题，美国政府总是自毁长城，敦促中国政府要把这条文化入侵的途径断掉。</p>
+<p><strong>三，本就没有“纯种”的文化</strong></p>
+<p><strong>1，“美国文化”连主体都不清晰</strong></p>
+<p>如果国粹派们所说的那些“美国文化”真的是美国的国家利益，那么这个国家利益一开始就站不住脚，例如美国自由派允许堕胎和同性恋合法化，而保守派两样都反对，两派互不相让，“国家利益”岂不已经因此分裂？众所周知，美国是个移民国家，文化构成堪称五花八门，很多人认为中国人过圣诞节是美国文化入侵，实际上圣诞节来自欧洲天主教的文化；基督教本身也不是美国文化，主要来自东方的犹太人；流行文化方面，前两年穆斯林说唱在美国相当红火，其来源却是与美国为敌的穆斯林国家；007和蜘蛛侠电影都被认为是“西方文化霸权”的代言人，因为前者宣扬冷战思维，后者宣扬美式个人英雄主义，但其实它们都已经是日本SONY公司旗下的产品，甚至一度传出要被中国公司收购的消息。</p>
+<p><strong>2，“纯正中国文化”同样也是神话</strong></p>
+<p>当然也许有人要说，西方文化本来就被糅合得乱七八糟，非常不堪，但中国文化是一方净土，必须要保住。可是，连中国的白酒文化，起居文化，饮食文化，这些纯正的中国文化其实都并不“纯种”：白酒的制造工艺和喝白酒的习惯一般认为都来自西亚；而中国人古代都是席地而坐，坐凳子是跟胡人学的；中餐里面常用的辣椒就是个新鲜的外来物种，两三百年前才从南美洲进入中国——可以说，川菜湘菜吃辣椒绝对是西方“文化入侵”的结果。如果我们承认白酒，川菜是中国传统文化的一部分，那我们就必须承认，即使传统文化，也是在与外来文化的交流中成长。“传统文化”尚且如此，更不用说交通规则，一夫一妻，人民代表制度等等现代生活内容。</p>
+<p><strong>四，反对文化交流弊多利少</strong></p>
+<p><strong>1，“文化侵略论”的实质，是反对文化交流</strong></p>
+<p>所谓“文化侵略论”，其描述的内容无非就是文化交流当中，一方的文化比另一方的文化看起来更受对方欢迎，但如果连这都要抵制，那么所有的文化交流就只能全部取消。因为任何两种文化，其影响力都不会完全均势，文化交流不像对外贸易可以进行数量统计，完全“对等的”文化交流是不可能存在的。此外，文化交流总会造成结果，如果一开始打定主意不准异国文化对本国人造成任何影响，那也非禁止文化交流不可。</p>
+<p><strong>2，文化越封闭越虚弱</strong></p>
+<p>如果我们说中国文化最强大的唐朝，恰恰是与外来文化交流最多的时期，那么反对“文化入侵”者必定要回应：那是因为我们的文化比对方强势，我们可以“入侵”对方，如果强势的是对方，我们就吃亏了。其实，弱势文化更是必须和外界交流，否则只能越来越弱势，越来越经不起交流。80年代一部香港电影《少林寺》影响全国，甚至引发社会问题，不少家长控诉电影误导孩子去河南学武，其实这部电影之所以引起这么大的轰动，很大程度上是因为我们从来没有接触过香港功夫片，这部电影对我们来说简直是横空出世。</p>
+<p><strong>结语</strong>：我们不反对赵半狄抵制功夫熊猫，当然我们也不反对抵制赵半狄，我们只反对强迫我们接受或抵制。</p>
+</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:eallion@eallion.com">大大的小蜗牛</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://eallion.com/kongfupanda/">https://eallion.com/kongfupanda/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E5%8C%96/">文化    </a><a class="post-meta__tags" href="/tags/%E7%86%8A%E7%8C%AB/">熊猫    </a><a class="post-meta__tags" href="/tags/%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB/">功夫熊猫    </a><a class="post-meta__tags" href="/tags/%E6%96%87%E5%8C%96%E4%BE%B5%E7%95%A5/">文化侵略    </a><a class="post-meta__tags" href="/tags/%E4%BE%B5%E7%95%A5/">侵略    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-8.png" data-sites="twitter,facebook,weibo,wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.png" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/untitled/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-8.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>无题</span></div></a></div><div class="next-post pull_right"><a href="/love-someone/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-1.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>爱一个人</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/yueban/" title="年小月半大"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-5.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">年小月半大</div></div></a></div><div class="relatedPosts_item"><a href="/chinese-and-western-culture/" title="论中西文化"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/eallion/statics@master/hexo/material-5.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-29</div><div class="relatedPosts_title">论中西文化</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = true == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'XKYK4KiRIhNnPNDIXKli2tMU-9Nh9j0Va',
+  appKey:'21Rd85t71rpHhqHCj6rQEnTn',
+  placeholder:'说点什么吧……',
+  avatar:'',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2006 - 2019 大大的小蜗牛.com</div><div class="footer_custom_text"><span>Powered by</span> <a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">&middot;</span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a><span class="footer-separator">&middot;</span><a href="https://eallion.github.io" target="_blank" rel="noopener"><span>Git Pages</span></a></div><div class="icp"><a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"><span>浙ICP备16031768号-2</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script async src="//cdn.busuanzi.ibruce.info/cdn/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script><script>pangu.spacingElementById('body-wrap');</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

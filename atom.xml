@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eallion.com/"/>
-  <updated>2019-12-29T21:44:02.449Z</updated>
+  <updated>2019-12-29T21:53:17.147Z</updated>
   <id>https://eallion.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Github Actions 自动部署 Hexo 脚本</title>
-    <link href="https://eallion.com/github-actions-hexo-ci"/>
-    <id>https://eallion.com/github-actions-hexo-ci</id>
+    <link href="https://eallion.com/github-actions-hexo-ci/"/>
+    <id>https://eallion.com/github-actions-hexo-ci/</id>
     <published>2019-12-28T14:53:43.000Z</published>
-    <updated>2019-12-29T21:44:02.449Z</updated>
+    <updated>2019-12-29T21:53:17.147Z</updated>
     
     <summary type="html">
     
@@ -51,10 +51,10 @@
   
   <entry>
     <title>Gridea git push 同步到多个仓库</title>
-    <link href="https://eallion.com/deploy-gridea-to-github-and-coding"/>
-    <id>https://eallion.com/deploy-gridea-to-github-and-coding</id>
+    <link href="https://eallion.com/deploy-gridea-to-github-and-coding/"/>
+    <id>https://eallion.com/deploy-gridea-to-github-and-coding/</id>
     <published>2019-12-16T14:58:39.000Z</published>
-    <updated>2019-12-29T21:44:02.449Z</updated>
+    <updated>2019-12-29T21:53:17.147Z</updated>
     
     <summary type="html">
     
@@ -81,8 +81,8 @@
   
   <entry>
     <title>Ubuntu 19.10 优化</title>
-    <link href="https://eallion.com/ubuntu1910"/>
-    <id>https://eallion.com/ubuntu1910</id>
+    <link href="https://eallion.com/ubuntu1910/"/>
+    <id>https://eallion.com/ubuntu1910/</id>
     <published>2019-11-29T04:36:00.000Z</published>
     <updated>2019-12-11T03:40:15.000Z</updated>
     
@@ -116,8 +116,8 @@
   
   <entry>
     <title>Typecho 中英文之间自动加上空格</title>
-    <link href="https://eallion.com/autospace"/>
-    <id>https://eallion.com/autospace</id>
+    <link href="https://eallion.com/autospace/"/>
+    <id>https://eallion.com/autospace/</id>
     <published>2019-11-29T01:29:00.000Z</published>
     <updated>2019-12-02T05:53:16.000Z</updated>
     
@@ -147,8 +147,8 @@
   
   <entry>
     <title>Ubuntu 配置 Guake  Oh-My-Zsh 和 EverVim</title>
-    <link href="https://eallion.com/ubuntuzsh"/>
-    <id>https://eallion.com/ubuntuzsh</id>
+    <link href="https://eallion.com/ubuntuzsh/"/>
+    <id>https://eallion.com/ubuntuzsh/</id>
     <published>2019-11-26T17:08:00.000Z</published>
     <updated>2019-11-29T18:10:00.000Z</updated>
     
@@ -183,8 +183,8 @@
   
   <entry>
     <title>阿里云镜像改版</title>
-    <link href="https://eallion.com/alimirrors"/>
-    <id>https://eallion.com/alimirrors</id>
+    <link href="https://eallion.com/alimirrors/"/>
+    <id>https://eallion.com/alimirrors/</id>
     <published>2019-11-26T07:03:00.000Z</published>
     <updated>2019-11-27T11:47:15.000Z</updated>
     
@@ -216,8 +216,8 @@
   
   <entry>
     <title>备份工具 Duplicati</title>
-    <link href="https://eallion.com/duplicati"/>
-    <id>https://eallion.com/duplicati</id>
+    <link href="https://eallion.com/duplicati/"/>
+    <id>https://eallion.com/duplicati/</id>
     <published>2019-11-25T14:30:00.000Z</published>
     <updated>2019-11-25T14:34:54.000Z</updated>
     
@@ -247,8 +247,8 @@
   
   <entry>
     <title>Ubuntu Server snap 安装 Nextcloud</title>
-    <link href="https://eallion.com/nextcloud"/>
-    <id>https://eallion.com/nextcloud</id>
+    <link href="https://eallion.com/nextcloud/"/>
+    <id>https://eallion.com/nextcloud/</id>
     <published>2019-11-25T08:08:00.000Z</published>
     <updated>2019-11-25T14:36:31.000Z</updated>
     
@@ -282,8 +282,8 @@
   
   <entry>
     <title>Ubuntu Server 安装 Mosh</title>
-    <link href="https://eallion.com/mosh"/>
-    <id>https://eallion.com/mosh</id>
+    <link href="https://eallion.com/mosh/"/>
+    <id>https://eallion.com/mosh/</id>
     <published>2019-11-24T08:12:00.000Z</published>
     <updated>2019-11-25T14:31:26.000Z</updated>
     
@@ -318,8 +318,8 @@
   
   <entry>
     <title>breaking bad</title>
-    <link href="https://eallion.com/breakingbad"/>
-    <id>https://eallion.com/breakingbad</id>
+    <link href="https://eallion.com/breakingbad/"/>
+    <id>https://eallion.com/breakingbad/</id>
     <published>2019-11-21T08:21:00.000Z</published>
     <updated>2019-11-21T08:23:20.000Z</updated>
     
@@ -348,8 +348,8 @@
   
   <entry>
     <title>算命</title>
-    <link href="https://eallion.com/fortune-telling"/>
-    <id>https://eallion.com/fortune-telling</id>
+    <link href="https://eallion.com/fortune-telling/"/>
+    <id>https://eallion.com/fortune-telling/</id>
     <published>2019-11-05T06:45:00.000Z</published>
     <updated>2019-11-05T06:45:30.000Z</updated>
     
@@ -380,8 +380,8 @@
   
   <entry>
     <title>WeGame LOL 20投一键喊话</title>
-    <link href="https://eallion.com/wegame-lol-20"/>
-    <id>https://eallion.com/wegame-lol-20</id>
+    <link href="https://eallion.com/wegame-lol-20/"/>
+    <id>https://eallion.com/wegame-lol-20/</id>
     <published>2019-10-18T05:21:00.000Z</published>
     <updated>2019-10-18T05:23:41.000Z</updated>
     
@@ -415,8 +415,8 @@
   
   <entry>
     <title>Made by Google ‘19</title>
-    <link href="https://eallion.com/6183"/>
-    <id>https://eallion.com/6183</id>
+    <link href="https://eallion.com/6183/"/>
+    <id>https://eallion.com/6183/</id>
     <published>2019-10-12T18:45:00.000Z</published>
     <updated>2019-10-12T18:47:53.000Z</updated>
     
@@ -446,8 +446,8 @@
   
   <entry>
     <title>言论自由</title>
-    <link href="https://eallion.com/free-speech"/>
-    <id>https://eallion.com/free-speech</id>
+    <link href="https://eallion.com/free-speech/"/>
+    <id>https://eallion.com/free-speech/</id>
     <published>2019-10-12T06:38:00.000Z</published>
     <updated>2019-10-24T09:24:19.000Z</updated>
     
@@ -473,8 +473,8 @@
   
   <entry>
     <title>10年間を振り返る</title>
-    <link href="https://eallion.com/ten-years"/>
-    <id>https://eallion.com/ten-years</id>
+    <link href="https://eallion.com/ten-years/"/>
+    <id>https://eallion.com/ten-years/</id>
     <published>2019-09-28T05:06:00.000Z</published>
     <updated>2019-09-28T16:07:35.000Z</updated>
     
@@ -502,8 +502,8 @@
   
   <entry>
     <title>回老家一趟</title>
-    <link href="https://eallion.com/go-back-home"/>
-    <id>https://eallion.com/go-back-home</id>
+    <link href="https://eallion.com/go-back-home/"/>
+    <id>https://eallion.com/go-back-home/</id>
     <published>2019-07-13T21:54:44.000Z</published>
     <updated>2019-07-13T21:54:44.000Z</updated>
     
@@ -528,8 +528,8 @@
   
   <entry>
     <title>亲戚</title>
-    <link href="https://eallion.com/relative"/>
-    <id>https://eallion.com/relative</id>
+    <link href="https://eallion.com/relative/"/>
+    <id>https://eallion.com/relative/</id>
     <published>2019-07-02T04:40:40.000Z</published>
     <updated>2019-07-02T04:40:40.000Z</updated>
     
@@ -555,8 +555,8 @@
   
   <entry>
     <title>中年</title>
-    <link href="https://eallion.com/middle-age"/>
-    <id>https://eallion.com/middle-age</id>
+    <link href="https://eallion.com/middle-age/"/>
+    <id>https://eallion.com/middle-age/</id>
     <published>2019-06-30T04:12:37.000Z</published>
     <updated>2019-06-30T04:12:37.000Z</updated>
     
@@ -580,8 +580,8 @@
   
   <entry>
     <title>利川高空VR全景图</title>
-    <link href="https://eallion.com/vr-of-lichuan"/>
-    <id>https://eallion.com/vr-of-lichuan</id>
+    <link href="https://eallion.com/vr-of-lichuan/"/>
+    <id>https://eallion.com/vr-of-lichuan/</id>
     <published>2019-06-29T18:08:36.000Z</published>
     <updated>2019-06-29T18:08:36.000Z</updated>
     
@@ -607,8 +607,8 @@
   
   <entry>
     <title>灵魂问答</title>
-    <link href="https://eallion.com/questions-of-the-soul"/>
-    <id>https://eallion.com/questions-of-the-soul</id>
+    <link href="https://eallion.com/questions-of-the-soul/"/>
+    <id>https://eallion.com/questions-of-the-soul/</id>
     <published>2019-06-29T14:38:00.000Z</published>
     <updated>2019-06-29T14:41:19.000Z</updated>
     
