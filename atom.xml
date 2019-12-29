@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eallion.com/"/>
-  <updated>2019-12-29T17:12:31.079Z</updated>
+  <updated>2019-12-29T17:20:26.585Z</updated>
   <id>https://eallion.com/</id>
   
   <author>
@@ -17,38 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo Butterfly 主题修改备忘</title>
-    <link href="https://eallion.com/butterfly/"/>
-    <id>https://eallion.com/butterfly/</id>
-    <published>2019-12-28T21:00:26.000Z</published>
-    <updated>2019-12-29T17:12:31.079Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;Hexo-butterfly-修改备忘&quot;&gt;&lt;a href=&quot;#Hexo-butterfly-修改备忘&quot; class=&quot;headerlink&quot; title=&quot;Hexo butterfly
-        
-      
-    
-    </summary>
-    
-    
-      <category term="日志" scheme="https://eallion.com/categories/daily/"/>
-    
-    
-      <category term="hexo" scheme="https://eallion.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Github Actions 自动部署 Hexo 脚本</title>
     <link href="https://eallion.com/github-actions-hexo-ci/"/>
     <id>https://eallion.com/github-actions-hexo-ci/</id>
     <published>2019-12-28T14:53:43.000Z</published>
-    <updated>2019-12-29T17:12:31.079Z</updated>
+    <updated>2019-12-29T17:20:26.585Z</updated>
     
     <summary type="html">
     
@@ -81,7 +54,7 @@
     <link href="https://eallion.com/deploy-gridea-to-github-and-coding/"/>
     <id>https://eallion.com/deploy-gridea-to-github-and-coding/</id>
     <published>2019-12-16T14:58:39.000Z</published>
-    <updated>2019-12-29T17:12:31.079Z</updated>
+    <updated>2019-12-29T17:20:26.585Z</updated>
     
     <summary type="html">
     
@@ -629,6 +602,33 @@
     
     
       <category term="利川高空VR全景图" scheme="https://eallion.com/tags/%E5%88%A9%E5%B7%9D%E9%AB%98%E7%A9%BAVR%E5%85%A8%E6%99%AF%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>灵魂问答</title>
+    <link href="https://eallion.com/questions-of-the-soul/"/>
+    <id>https://eallion.com/questions-of-the-soul/</id>
+    <published>2019-06-29T14:38:00.000Z</published>
+    <updated>2019-06-29T14:41:19.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;配钥匙师傅：你配吗？&lt;br&gt;算命先生：你算什么东西？&lt;br&gt;食堂阿姨：你要饭吗？&lt;br&gt;快递小哥：你是什么东西？&lt;br&gt;上海垃圾分拣阿姨：你是什么垃圾？&lt;br&gt;滴滴司机：你搞清楚自己的定位没有？&lt;br&gt;门卫大爷：你从哪里来，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="嘀咕" scheme="https://eallion.com/categories/talk/"/>
+    
+    
+      <category term="灵魂问答" scheme="https://eallion.com/tags/%E7%81%B5%E9%AD%82%E9%97%AE%E7%AD%94/"/>
     
   </entry>
   
