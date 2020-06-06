@@ -1,3 +1,1 @@
-# charleschin.com
-
-[https://charleschin.com](https://charleschin.com)
+# charleschin
